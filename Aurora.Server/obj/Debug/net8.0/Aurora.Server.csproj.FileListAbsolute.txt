@@ -255,3 +255,12 @@ S:\Semestr_6\WKCK\MiniProjekt\Aurora\GBEducation\Aurora.Server\obj\Debug\net8.0\
 S:\Semestr_6\WKCK\MiniProjekt\Aurora\GBEducation\Aurora.Server\obj\Debug\net8.0\Aurora.Server.pdb
 S:\Semestr_6\WKCK\MiniProjekt\Aurora\GBEducation\Aurora.Server\obj\Debug\net8.0\Aurora.Server.genruntimeconfig.cache
 S:\Semestr_6\WKCK\MiniProjekt\Aurora\GBEducation\Aurora.Server\obj\Debug\net8.0\ref\Aurora.Server.dll
+S:\Semestr_6\WKCK\MiniProjekt\Aurora\GBEducation\Aurora.Server\obj\Debug\net8.0\Aurora.Server.sourcelink.json
+S:\Semestr_6\WKCK\MiniProjekt\Aurora\GBEducation\Aurora.Server\bin\Debug\net8.0\MySqlConnector.dll
+S:\Semestr_6\WKCK\MiniProjekt\Aurora\GBEducation\Aurora.Server\bin\Debug\net8.0\NHibernate.Driver.MySqlConnector.dll
+S:\Semestr_6\WKCK\MiniProjekt\Aurora\GBEducation\Aurora.Server\bin\Debug\net8.0\System.Data.SqlClient.dll
+S:\Semestr_6\WKCK\MiniProjekt\Aurora\GBEducation\Aurora.Server\bin\Debug\net8.0\runtimes\win-arm64\native\sni.dll
+S:\Semestr_6\WKCK\MiniProjekt\Aurora\GBEducation\Aurora.Server\bin\Debug\net8.0\runtimes\win-x64\native\sni.dll
+S:\Semestr_6\WKCK\MiniProjekt\Aurora\GBEducation\Aurora.Server\bin\Debug\net8.0\runtimes\win-x86\native\sni.dll
+S:\Semestr_6\WKCK\MiniProjekt\Aurora\GBEducation\Aurora.Server\bin\Debug\net8.0\runtimes\unix\lib\netcoreapp2.1\System.Data.SqlClient.dll
+S:\Semestr_6\WKCK\MiniProjekt\Aurora\GBEducation\Aurora.Server\bin\Debug\net8.0\runtimes\win\lib\netcoreapp2.1\System.Data.SqlClient.dll

@@ -20,7 +20,7 @@ var builder = WebApplication.CreateBuilder(args);
 builder.Services.AddControllers();
 // Learn more about configuring Swagger/OpenAPI at https://aka.ms/aspnetcore/swashbuckle
 builder.Services.AddEndpointsApiExplorer();
-builder.Services.AddSwaggerGen();
+
 
 builder.Services.AddCors(options =>
 {
@@ -34,37 +34,36 @@ builder.Services.AddCors(options =>
         });
 });
 builder.Services.AddEndpointsApiExplorer();
-builder.Services.AddSwaggerGen(c =>
-{
-    
-    c.SwaggerDoc("v1", new OpenApiInfo { Title = "API Aplikacji do rejestracji na hackaton", Version = "v1" });
-});
 
-
+builder.Services.AddSwaggerGen();
 
 builder.Services.AddFluentMigratorCore() // Move FluentMigrator registration here
     .ConfigureRunner(c =>
     {
         c.AddSqlServer2016()
-            .WithGlobalConnectionString("Server=localhost\\SQLEXPRESS;Database=Hackaton;Integrated Security=SSPI;Application Name=GBEducation; TrustServerCertificate=true;")
+            .WithGlobalConnectionString("Server=localhost\\SQLEXPRESS;Database=GBEducation;Integrated Security=SSPI;Application Name=GBEducation; TrustServerCertificate=true;")
             .ScanIn(Assembly.GetExecutingAssembly()).For.All();
     })
     .AddLogging(config => config.AddFluentMigratorConsole());
 
 var app = builder.Build();
-
-app.UseDefaultFiles();
-app.UseStaticFiles();
-
 using var scope = app.Services.CreateScope();
+
+
+
 var migrator = scope.ServiceProvider.GetService<IMigrationRunner>();
 if (migrator != null)
 {
-   // migrator.ListMigrations();
-    //migrator.MigrateUp();
+    migrator.ListMigrations();
+    migrator.MigrateUp();
+}
+else
+{
+    throw new Exception("Migration fault");
 }
 app.UseCors("AllowAllOrigins");
-// Configure the HTTP request pipeline.
+app.UseDefaultFiles();
+app.UseStaticFiles();
 if (app.Environment.IsDevelopment())
 {
     app.UseSwagger();
