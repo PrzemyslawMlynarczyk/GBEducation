@@ -1,0 +1,3 @@
+C:\Users\Pawel\source\repos\Aurora\aurora.client\obj\Debug\aurora.client.esproj.CoreCompileInputs.cache
+S:\Semestr_6\WKCK\MiniProjekt\Aurora\aurora.client\obj\Debug\aurora.client.esproj.CoreCompileInputs.cache
+S:\Semestr_6\WKCK\MiniProjekt\Aurora\GBEducation\aurora.client\obj\Debug\aurora.client.esproj.CoreCompileInputs.cache
