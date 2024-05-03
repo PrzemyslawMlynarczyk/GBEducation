@@ -1,18 +1,23 @@
 ﻿body {
 }
 .header {
-    height: rem(56px);
-    margin-bottom: rem(120px);
-    background-color: var(--mantine-color-body);
-    border-bottom: rem(1px) solid light-dark(var(--mantine-color-gray-3), var(--mantine-color-dark-4));
+    position: absolute;
+    top: 5%;
+    left: 0;
+    right: 0;
 }
-
 
 .left{
     width:50%;
     float: left;
+
 }
 .right{
     width:50%;
     float: left;
+
+}
+.footer{
+    clear: both; 
+
 }

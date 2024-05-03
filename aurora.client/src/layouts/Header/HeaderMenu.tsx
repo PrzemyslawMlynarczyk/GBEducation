@@ -1,13 +1,13 @@
-import { Menu, Group, Center, Burger, Container } from '@mantine/core';
+import { Menu, Group, Center, Burger, Container,Image, em , rem, Text, Flex, Title } from '@mantine/core';
 import { useDisclosure } from '@mantine/hooks';
 import { IconChevronDown } from '@tabler/icons-react';
 
 import classes from './HeaderMenu.module.css';
 
 const links = [
-    { link: '/about', label: 'GBEducation' },
+    
     { link: '/Menu', label: 'Menu' },
-    { link: '/pricing', label: 'Klasa' },
+    { link: '/Class', label: 'Klasa' },
     { link: '/HelpDesk', label: 'Centrum Pomocy' },
     { link: '/Profile', label: 'Profil' },
     { link: '/Logout', label: 'Wyloguj się' },
@@ -23,9 +23,12 @@ export function HeaderMenu() {
 
         if (menuItems) {
             return (
+                
                 <Menu key={link.label} trigger="hover" transitionProps={{ exitDuration: 0 }} withinPortal>
-                    <Menu.Target>
-                        <a
+                    
+                    <Menu.Target >
+                        <a  
+                            
                             href={link.link}
                             className={classes.link}
                             onClick={(event) => event.preventDefault()}
@@ -38,6 +41,7 @@ export function HeaderMenu() {
                     </Menu.Target>
                     <Menu.Dropdown>{menuItems}</Menu.Dropdown>
                 </Menu>
+                
             );
         }
 
@@ -59,6 +63,18 @@ export function HeaderMenu() {
                 <div>
                    
                     <div className={classes.inner}>
+                        <Flex>
+                        <Image w={50}  mr={rem(30)}
+                            radius="md"
+                            src="https://raw.githubusercontent.com/mantinedev/mantine/master/.demo/images/bg-7.png"
+                        />
+                            <Title mr={rem(30)}
+                            order={4}
+                            >
+                                
+                                GBEducation
+                            </Title>
+                        </Flex>
                         <Group gap={5} visibleFrom="sm">
                             {items}
                         </Group>

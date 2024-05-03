@@ -11,6 +11,8 @@ import Auth from './pages/Auth/Auth.tsx';
 import { Error } from "./pages/Error/Error.tsx";
 import HelpDesk from "./pages/HelpDesk/HelpDesk.tsx";
 import Menu from "./pages/Menu/Menu.tsx";
+import Class from "./pages/Class/Class.tsx";
+import Profile from "./pages/Profile/Profile.tsx";
 
 // Tworzenie motywu Mantine
 const theme = createTheme({
@@ -29,6 +31,8 @@ ReactDOM.createRoot(document.getElementById('root')).render(
                 <Route path="/404" element={<Error />} />
                 <Route path="/Menu" element={<Menu />} />
                 <Route path="/HelpDesk" element={<HelpDesk />} />
+                <Route path="/Class" element={<Class />} />
+                <Route path="/Profile" element={<Profile />} />
 
             </Routes>
         </BrowserRouter>

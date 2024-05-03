@@ -10,7 +10,7 @@ body {
 .inner {
     height: rem(56px);
     display: flex;
-    flex-direction: column;
+    flex-direction: row;
     justify-content: center;
     align-items: center; 
     text-align: center;
@@ -26,7 +26,7 @@ body {
     color: light-dark(var(--mantine-color-gray-7), var(--mantine-color-dark-0));
     font-size: var(--mantine-font-size-sm);
     font-weight: 500;
-
+    margin-right: 50px;
     @mixin hover {
         background-color: light-dark(var(--mantine-color-gray-0), var(--mantine-color-dark-6));
     }
@@ -42,4 +42,7 @@ body {
 .right{
     width:50%;
     float: left;
+}
+.left_image{
+    
 }
