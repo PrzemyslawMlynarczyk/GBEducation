@@ -1,5 +1,8 @@
 ﻿body {
+    margin: 0; 
+    padding: 0; 
 }
+
 .header {
     position: absolute;
     top: 5%;
@@ -7,17 +10,17 @@
     right: 0;
 }
 
-.left{
-    width:50%;
-    float: left;
-
+.menu-container {
+    display: flex; 
+    justify-content: space-between; 
+    align-items: stretch; 
+    width: 100%;
 }
-.right{
-    width:50%;
-    float: left;
 
+.custom{
+   margin-bottom: 25px; 
 }
-.footer{
-    clear: both; 
 
+.footer {
+    clear: both;
 }

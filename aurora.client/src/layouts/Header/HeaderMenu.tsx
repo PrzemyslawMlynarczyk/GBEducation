@@ -1,4 +1,4 @@
-import { Menu, Group, Center, Burger, Container,Image, em , rem, Text, Flex, Title } from '@mantine/core';
+import { Menu, Group, Center, Burger, Container,Image, em , rem, Text, Flex, Title, Divider } from '@mantine/core';
 import { useDisclosure } from '@mantine/hooks';
 import { IconChevronDown } from '@tabler/icons-react';
 
@@ -79,9 +79,9 @@ export function HeaderMenu() {
                             {items}
                         </Group>
                         <Burger opened={opened} onClick={toggle} size="sm" hiddenFrom="sm"/>
-
+                        
                     </div>
-                    
+                    <Divider my="sm" variant="dashed" />
                 </div>
             </Container>
         </header>

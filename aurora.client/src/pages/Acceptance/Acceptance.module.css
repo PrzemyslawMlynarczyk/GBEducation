@@ -1,4 +1,4 @@
-﻿.header {
+.header {
     position: absolute;
     top: 5%;
     left: 0;
@@ -11,7 +11,7 @@
     left: 0;
     right: 0;
     z-index: 1;
-   
+
 }
 
 .outerContainer {
@@ -21,17 +21,20 @@
     margin-top: 120px;
 }
 
-.left {
-    padding: 100px;
-    background-color: #535bf2;
-    width: 50%;
+.left, .right {
+    flex: 1;
+    padding: 0;
+    margin: 0;
+}
+
+.container {
+    display: flex;
 }
 
 .right {
-    padding: 100px;
-    background-color: darkorange;
-    width: 50%;
+    margin-left: 100px;
 }
+
 
 .counter {
     display: flex;
@@ -48,13 +51,6 @@
     margin: 0 10px;
 }
 
-
-.recommend {
-    padding: 1%;
-    width: 100%;
-    clear: both;
-}
-
 .footer {
     padding: 1%;
     width: 100%;
@@ -66,4 +62,10 @@
 .buttonContainer {
     display: flex;
     flex-direction: column;
+}
+.gap{
+    margin-top: 50px;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
 }

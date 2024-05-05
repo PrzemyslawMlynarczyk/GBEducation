@@ -12,7 +12,9 @@ import { Error } from "./pages/Error/Error.tsx";
 import HelpDesk from "./pages/HelpDesk/HelpDesk.tsx";
 import Menu from "./pages/Menu/Menu.tsx";
 import Class from "./pages/Class/Class.tsx";
+import ClassTask from "./pages/ClassTask/ClassTask.tsx";
 import Profile from "./pages/Profile/Profile.tsx";
+import Acceptance from "./pages/Acceptance/Acceptance.tsx";
 
 // Tworzenie motywu Mantine
 const theme = createTheme({
@@ -33,6 +35,8 @@ ReactDOM.createRoot(document.getElementById('root')).render(
                 <Route path="/HelpDesk" element={<HelpDesk />} />
                 <Route path="/Class" element={<Class />} />
                 <Route path="/Profile" element={<Profile />} />
+                <Route path="/ClassTask" element={<ClassTask />} />
+                <Route path="/Acceptance" element={<Acceptance />} />
 
             </Routes>
         </BrowserRouter>
