@@ -51,16 +51,26 @@
 .recommend {
     padding: 1%;
     width: 100%;
-    background-color: #FFA500;
     clear: both;
 }
 
 .footer {
     padding: 1%;
     width: 100%;
-    background-color: aqua;
     clear: both;
 }
 .interval{
     margin: 30px;
+}
+.gap{
+    margin-top: 30px;
+}
+.modal{
+    width: 100vw;
+    height: 100vh;
+    top: 0;
+    left:0;
+    right:0;
+    bottom:0;
+    position:fixed;
 }

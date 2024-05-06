@@ -1,5 +1,6 @@
 ﻿import React, { useEffect, useState } from 'react';
 import { HeaderMenu } from "../../layouts/Header/HeaderMenu";
+import { TopTools } from "../../layouts/TopTools/TopTools";
 import classes from "./Class.module.css";
 
 import { Button, Group, Paper } from '@mantine/core';
@@ -12,8 +13,7 @@ export default function Class() {
                 <HeaderMenu />
             </div>
             <div className={classes.breadcrum}>
-                <Button mx="10px" variant="filled" color="rgba(0, 0, 0, 1)" radius="xl" size="xs">Moja klasa</Button>
-                <Button mx="10px" variant="filled" color="rgba(0, 0, 0, 1)" radius="xl" size="xs">Zadania</Button>
+                <TopTools link1="/Class" link2="/ClassTask" link3="/Acceptance" />
             </div>
             <div className={classes.recommend}>
                 

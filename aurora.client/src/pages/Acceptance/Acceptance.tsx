@@ -1,5 +1,6 @@
 import React, { useEffect, useState } from 'react';
 import { HeaderMenu } from "../../layouts/Header/HeaderMenu";
+import { TopTools } from "../../layouts/TopTools/TopTools";
 import classes from "./Acceptance.module.css";
 import { Table, TableData, Checkbox } from '@mantine/core';
 import { Button, Group, Paper, Text, ScrollArea } from '@mantine/core';
@@ -8,10 +9,10 @@ import { Button, Group, Paper, Text, ScrollArea } from '@mantine/core';
 
 const elements = [
     { Lp: 1, Imie: 'Przemysław', Nazwisko: 'C', Klasa: '1A' },
-    { Lp: 2, Imie: 'Andrzej', Nazwisko: 'N', Klasa: '1B' },
-    { Lp: 3, Imie: 'Witold', Nazwisko: 'Y', Klasa: '2A' },
-    { Lp: 4, Imie: 'Krystian', Nazwisko: 'Ba', Klasa: '2B' },
-    { Lp: 5, Imie: 'Kamil', Nazwisko: 'Ce', Klasa: '1B' },
+    { Lp: 2, Imie: 'Andrzej', Nazwisko: 'N', Klasa: '1A' },
+    { Lp: 3, Imie: 'Witold', Nazwisko: 'Y', Klasa: '1A' },
+    { Lp: 4, Imie: 'Krystian', Nazwisko: 'Ba', Klasa: '1A' },
+    { Lp: 5, Imie: 'Kamil', Nazwisko: 'Ce', Klasa: '1A' },
 ];
 
 
@@ -52,9 +53,7 @@ export default function Acceptance() {
                     <HeaderMenu />
                 </div>
                 <div className={classes.breadcrum}>
-                    <Button mx="10px" variant="filled" color="rgba(0, 0, 0, 1)" radius="xl" size="xs">Moja klasa</Button>
-                    <Button mx="10px" variant="filled" color="rgba(0, 0, 0, 1)" radius="xl" size="xs">Zadania</Button>
-                    <Button mx="10px" variant="filled" color="rgba(0, 0, 0, 1)" radius="xl" size="xs">Akceptacje</Button>
+                    <TopTools link1="/Class" link2="/ClassTask" link3="/Acceptance" />
                 </div>
                 <div className={classes.left}>
                     <Group justify="center">

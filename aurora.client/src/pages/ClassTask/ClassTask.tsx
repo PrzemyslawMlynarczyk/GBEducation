@@ -1,5 +1,6 @@
 ﻿import React, { useEffect, useState } from 'react';
 import { HeaderMenu } from "../../layouts/Header/HeaderMenu";
+import { TopTools } from "../../layouts/TopTools/TopTools.tsx";
 import classes from "./ClassTask.module.css";
 
 import { Button, Group, Paper, Text, ScrollArea } from '@mantine/core';
@@ -12,9 +13,10 @@ export default function ClassTask() {
                 <HeaderMenu/>
             </div>
             <div className={classes.breadcrum}>
-                <Button mx="10px" variant="filled" color="rgba(0, 0, 0, 1)" radius="xl" size="xs">Moja klasa</Button>
-                <Button mx="10px" variant="filled" color="rgba(0, 0, 0, 1)" radius="xl" size="xs">Zadania</Button>
-                <Button mx="10px" variant="filled" color="rgba(0, 0, 0, 1)" radius="xl" size="xs">Akceptacje</Button>
+                <TopTools link1="/Class" link2="/ClassTask" link3="/Acceptance" />
+
+
+
             </div>
             <div className={classes.left}>
                 <Group justify="center">
@@ -50,7 +52,7 @@ export default function ClassTask() {
             <div className={classes.right}>
                 <Paper shadow="xl" radius="md" withBorder p="xl">
                     <ScrollArea h={375} w={500}>
-                        <Text size="xl" td="underline"> Wybierz przedmiot do którego chcesz wstawić zadanie! GBS</Text>
+                        <Text size="xl" td="underline"> Wybierz przedmiot do którego chcesz wstawić zadanie!</Text>
                         <div className={classes.gap}>
                             <Button size="xl" radius="xl" justify="space-between" variant="default">
                                 <svg  xmlns="http://www.w3.org/2000/svg"  width="24"  height="24"  viewBox="0 0 24 24"  fill="none"  stroke="currentColor"  stroke-width="2"  stroke-linecap="round"  stroke-linejoin="round"  class="icon icon-tabler icons-tabler-outline icon-tabler-math"><path stroke="none" d="M0 0h24v24H0z" fill="none"/><path d="M19 5h-7l-4 14l-3 -6h-2" /><path d="M14 13l6 6" /><path d="M14 19l6 -6" /></svg>
