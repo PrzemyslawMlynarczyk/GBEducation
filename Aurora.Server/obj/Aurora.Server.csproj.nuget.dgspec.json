@@ -1,23 +1,23 @@
 {
   "format": 1,
   "restore": {
-    "S:\\Semestr_6\\WKCK\\MiniProjekt\\Aurora\\GBEducation\\Aurora.Server\\Aurora.Server.csproj": {}
+    "D:\\semestr6\\WKCK\\miniprojekt\\GBEducation\\Aurora.Server\\Aurora.Server.csproj": {}
   },
   "projects": {
-    "S:\\Semestr_6\\WKCK\\MiniProjekt\\Aurora\\GBEducation\\Aurora.Server\\Aurora.Server.csproj": {
+    "D:\\semestr6\\WKCK\\miniprojekt\\GBEducation\\Aurora.Server\\Aurora.Server.csproj": {
       "version": "1.0.0",
       "restore": {
-        "projectUniqueName": "S:\\Semestr_6\\WKCK\\MiniProjekt\\Aurora\\GBEducation\\Aurora.Server\\Aurora.Server.csproj",
+        "projectUniqueName": "D:\\semestr6\\WKCK\\miniprojekt\\GBEducation\\Aurora.Server\\Aurora.Server.csproj",
         "projectName": "Aurora.Server",
-        "projectPath": "S:\\Semestr_6\\WKCK\\MiniProjekt\\Aurora\\GBEducation\\Aurora.Server\\Aurora.Server.csproj",
-        "packagesPath": "C:\\Users\\Przemek\\.nuget\\packages\\",
-        "outputPath": "S:\\Semestr_6\\WKCK\\MiniProjekt\\Aurora\\GBEducation\\Aurora.Server\\obj\\",
+        "projectPath": "D:\\semestr6\\WKCK\\miniprojekt\\GBEducation\\Aurora.Server\\Aurora.Server.csproj",
+        "packagesPath": "C:\\Users\\przem\\.nuget\\packages\\",
+        "outputPath": "D:\\semestr6\\WKCK\\miniprojekt\\GBEducation\\Aurora.Server\\obj\\",
         "projectStyle": "PackageReference",
         "fallbackFolders": [
           "C:\\Program Files (x86)\\Microsoft Visual Studio\\Shared\\NuGetPackages"
         ],
         "configFilePaths": [
-          "C:\\Users\\Przemek\\AppData\\Roaming\\NuGet\\NuGet.Config",
+          "C:\\Users\\przem\\AppData\\Roaming\\NuGet\\NuGet.Config",
           "C:\\Program Files (x86)\\NuGet\\Config\\Microsoft.VisualStudio.FallbackLocation.config",
           "C:\\Program Files (x86)\\NuGet\\Config\\Microsoft.VisualStudio.Offline.config"
         ],
@@ -26,7 +26,6 @@
         ],
         "sources": {
           "C:\\Program Files (x86)\\Microsoft SDKs\\NuGetPackages\\": {},
-          "C:\\Program Files\\dotnet\\library-packs": {},
           "https://api.nuget.org/v3/index.json": {}
         },
         "frameworks": {
@@ -73,6 +72,10 @@
             "FluentNHibernate": {
               "target": "Package",
               "version": "[3.3.0, )"
+            },
+            "Microsoft.AspNetCore.Identity.EntityFrameworkCore": {
+              "target": "Package",
+              "version": "[8.0.4, )"
             },
             "Microsoft.AspNetCore.SpaProxy": {
               "target": "Package",
@@ -122,7 +125,7 @@
               "privateAssets": "all"
             }
           },
-          "runtimeIdentifierGraphPath": "C:\\Program Files\\dotnet\\sdk\\8.0.200/PortableRuntimeIdentifierGraph.json"
+          "runtimeIdentifierGraphPath": "C:\\Program Files\\dotnet\\sdk\\8.0.204/PortableRuntimeIdentifierGraph.json"
         }
       }
     }

@@ -1,4 +1,5 @@
-﻿using Aurora.Server.Models.Student;
+﻿using Aurora.Server.Models.AspNetUsers;
+using Aurora.Server.Models.Student;
 using FluentNHibernate.Cfg;
 using FluentNHibernate.Cfg.Db;
 using NHibernate;
@@ -31,7 +32,7 @@ namespace AuroraServer
                              m.FluentMappings.AddFromAssemblyOf<KlientEntity>()
                          ) Przykład mapowania TODO NIE ZAPOMINAĆ O MAPOWANIACH KOLEDZY*/
                         .Mappings(m =>
-                            m.FluentMappings.AddFromAssemblyOf<Student>())
+                            m.FluentMappings.AddFromAssemblyOf<AspNetUsers>())
                         .ExposeConfiguration(cfg => new SchemaUpdate(cfg).Execute(false, true))
                         .BuildSessionFactory();
 

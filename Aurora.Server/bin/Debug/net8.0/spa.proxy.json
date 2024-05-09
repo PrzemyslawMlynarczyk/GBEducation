@@ -3,7 +3,7 @@
 "ServerUrl": "https://localhost:5173",
 "RedirectUrl": "",
 "LaunchCommand": "npm run dev",
-"WorkingDirectory": "S:\\Semestr_6\\WKCK\\MiniProjekt\\Aurora\\GBEducation\\Aurora.Server\\..\\aurora.client",
+"WorkingDirectory": "D:\\semestr6\\WKCK\\miniprojekt\\GBEducation\\Aurora.Server\\..\\aurora.client",
 "MaxTimeoutInSeconds": "120",
 "KeepRunning": "false"
 }

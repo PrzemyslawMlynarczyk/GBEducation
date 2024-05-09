@@ -12,6 +12,9 @@ using Microsoft.Extensions.Hosting;
 using System.Diagnostics;
 using Microsoft.AspNetCore.Cors.Infrastructure;
 using Microsoft.OpenApi.Models;
+using Microsoft.EntityFrameworkCore.Infrastructure;
+using Aurora.Server.Models.AspNetUsers;
+using Microsoft.AspNetCore.Identity.EntityFrameworkCore;
 
 var builder = WebApplication.CreateBuilder(args);
 
@@ -36,6 +39,12 @@ builder.Services.AddCors(options =>
 builder.Services.AddEndpointsApiExplorer();
 
 builder.Services.AddSwaggerGen();
+builder.Services.AddDbContext<DataContext>(options =>
+    options.UseSqlServer(
+        "Server=localhost\\SQLEXPRESS;Database=GBEducation;Integrated Security=SSPI;Application Name=GBEducation; TrustServerCertificate=true;"));
+builder.Services.AddAuthorization();
+builder.Services.AddIdentityApiEndpoints<AspNetUsers>()
+    .AddEntityFrameworkStores<DataContext>();
 
 builder.Services.AddFluentMigratorCore() // Move FluentMigrator registration here
     .ConfigureRunner(c =>
@@ -47,6 +56,7 @@ builder.Services.AddFluentMigratorCore() // Move FluentMigrator registration her
     .AddLogging(config => config.AddFluentMigratorConsole());
 
 var app = builder.Build();
+app.MapIdentityApi<AspNetUsers>();
 using var scope = app.Services.CreateScope();
 
 
@@ -79,3 +89,8 @@ app.MapControllers();
 app.MapFallbackToFile("/index.html");
 
 app.Run();
+
+class DataContext : IdentityDbContext<AspNetUsers>
+{
+    public DataContext(DbContextOptions<DataContext> options) : base(options) { }
+}

@@ -1,13 +1,13 @@
 {
   "Version": 1,
-  "Hash": "mkskWHMcMxZfW+0ACZuvXcFX+t82wQ5PG6CszAxIJ+8=",
+  "Hash": "TF5wkxNEC8f11uLsYChKRlgPHD2zQdwHZIOdZydrC8I=",
   "Source": "Aurora.Server",
   "BasePath": "_content/Aurora.Server",
   "Mode": "Default",
   "ManifestType": "Build",
   "ReferencedProjectsConfiguration": [
     {
-      "Identity": "S:\\Semestr_6\\WKCK\\MiniProjekt\\Aurora\\GBEducation\\aurora.client\\aurora.client.esproj",
+      "Identity": "D:\\semestr6\\WKCK\\miniprojekt\\GBEducation\\aurora.client\\aurora.client.esproj",
       "Version": 2,
       "Source": "aurora.client",
       "GetPublishAssetsTargets": "GetCurrentProjectPublishStaticWebAssetItems",
