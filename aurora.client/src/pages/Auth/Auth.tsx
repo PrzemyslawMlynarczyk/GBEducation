@@ -34,71 +34,71 @@ export default function Auth(props) {
         },
     });
 
-    const [error, setError] = useState(""); // Stan przechowuj�cy komunikat o b��dzie
+    const [ShowError, setShowError] = useState(false);
 
     async function handleRegister() {
-        /*
-        const checkEmailUrl = "https://localhost:7071/api/AspNetUsers/checkEmail/" + form.values.email;
-        const registerUrl = "https://localhost:7071/api/AspNetUsers/registerCustom";
-
-        try {
-            // Sprawd�, czy email ju� istnieje w bazie danych
-            const emailResponse = await fetch(checkEmailUrl, {
-                method: 'GET',
-                headers: {
-                    'Content-Type': 'application/json',
-                },
-            });
-
-            if (!emailResponse.ok) {
-                const errorMessage = await emailResponse.text();
-                throw new Error(`HTTP error! Status: ${emailResponse.status}, Message: ${errorMessage}`);
-            }
-
-            const emailExists = await emailResponse.json();
-
-            if (emailExists) {
-                setError("Podany adres email ju� istnieje w bazie danych.");
-                return;
-            }
-
-            // Je�li email nie istnieje, zarejestruj u�ytkownika
-            const registerData = {
-                FirstName: form.values.firstName,
-                LastName: form.values.lastName,
-                Email: form.values.email,
-                PasswordHash: form.values.password,
-            };
-
-            const registerResponse = await fetch(registerUrl, {
-                method: 'POST',
-                headers: {
-                    'Content-Type': 'application/json',
-                },
-                body: JSON.stringify(registerData),
-            });
-
-            if (!registerResponse.ok) {
-                const errorMessage = await registerResponse.text();
-                throw new Error(`HTTP error! Status: ${registerResponse.status}, Message: ${errorMessage}`);
-            }
-
-            // Je�li rejestracja zako�czy�a si� powodzeniem, przeprowad� logowanie
-            await handleLogin();
-            window.location.href = "/";
-
-        } catch (error) {
-            console.error('Error during registration:', error);
+        console.log("Trying to register");
+        let error = false;
+        if (form.values.email.length < 5)
+        {
+            error = true;
+            form.setFieldError('email', 'Adres email jest niepoprawny!');
         }
-         */
+        if (form.values.password.length < 6)
+        {
+            error = true;
+            form.setFieldError('password', 'Hasło jest za krótkie!');
+        }
+        if (form.values.firstName.length < 1) {
+            error = true;
+            form.setFieldError('firstName', 'Nie jest podane imię!');
+        }
+        if (form.values.lastName.length < 1) {
+            error = true;
+            form.setFieldError('lastName', 'Nie jest podane nazwisko!');
+        }
+        if(error)
+        {
+            console.log("Error is true");
+            return;
+        }
+
+        console.log("Registering...");
+        const registerUrl = "https://localhost:7287/api/AspNetUsers";
+        const registerData = {
+            Email: form.values.email,
+            PasswordHash: form.values.password,
+            name: form.values.firstName,
+            surname: form.values.lastName,
+           
+        };
+        const registerResponse = await fetch(registerUrl, {
+            method: 'POST',
+            headers: {
+                'Content-Type': 'application/json',
+            },
+            body: JSON.stringify(registerData),
+        });
+
+        if (!registerResponse.ok) {
+            if (registerResponse.status === 404) {
+                form.setFieldError('email', 'Email istnieje już w bazie danych!');
+            }
+            const errorMessage = await registerResponse.text();
+            throw new Error(`HTTP error! Status: ${registerResponse.status}, Message: ${errorMessage}`);
+            return;
+        }
+        else {
+            window.location.href = "/Menu";
+        }
     }
 
     async function handleLogin() {
-        /*
-        const url = "https://localhost:7071/login?useCookies=true&useSessionCookies=true";
+        
+        const url = "https://localhost:7287/login?useCookies=true&useSessionCookies=true";
         const data = {
 
-            email: form.values.email,
+            Email: form.values.email,
             password: form.values.password
         }
 
@@ -116,57 +116,21 @@ export default function Auth(props) {
             if (!response.ok) {
 
                 const errorMessage = await response.text();
+                setShowError(true);
                 throw new Error(`HTTP error! Status: ${response.status}, Message: ${errorMessage}`);
             } else {
-                window.location.href = "/";
+                setShowError(false);
+                window.location.href = "/Menu";
             }
 
         } catch (error) {
             console.error('Error creating entity:', error);
         }
-        */
+        
     }
-    /*
-    const [users, setUsers] = useState([]);
-
-    const headers = {
-        'Content-Type': 'application/json',
-        'Access-Control-Allow-Origin': '*',
-        'Access-Control-Allow-Methods': 'POST,OPTIONS'
-    }
-    async function getCookies() {
-        const response = await fetch("https://localhost:7142/api/AspNetUsers/info", {
-            credentials: 'include',
-            headers: {
-                'Content-Type': 'application/json',
-                'Access-Control-Allow-Origin': '*',
-                'Access-Control-Allow-Credentials': 'true'
-            }
-
-        });
-
-        if (response.ok) {
-
-            return true;
-        } else {
-
-            return false;
-        }
 
 
-    }
-    useEffect(() => {
-        const checkCookies = async () => {
-            const isLoggedIn = await checkUserLoggedIn();
-            if (isLoggedIn) {
-                window.location.href = "/main";
-            } else {
-
-            }
-        };
-
-    }, []);
-    */
+    
     return (
         <Paper radius="md" p="xl" withBorder {...props}>
             <Text size="lg" fw={500}>
@@ -181,6 +145,7 @@ export default function Auth(props) {
                 <Stack>
                     {type === 'register' && (
                         <TextInput
+                            required
                             label="Imie"
                             placeholder="Podaj imię"
                             value={form.values.firstName}
@@ -190,6 +155,7 @@ export default function Auth(props) {
                     )}
                     {type === 'register' && (
                         <TextInput
+                            required
                             label="Nazwisko"
                             placeholder="Podaj nazwisko"
                             value={form.values.lastName}
@@ -203,7 +169,7 @@ export default function Auth(props) {
                         placeholder="hackaton@tu.kielce.pl"
                         value={form.values.email}
                         onChange={(event) => form.setFieldValue('email', event.currentTarget.value)}
-                        error={form.errors.email && 'Podany adres jest nieprawid�owy'}
+                        error={form.errors.email && 'Podany adres email istnieje już w bazie danych!'}
                         radius="md"
                     />
 
@@ -225,15 +191,17 @@ export default function Auth(props) {
                         />
                     )}
 
-                    {error && <Text style={{ color: 'red', fontSize: '0.75rem' }}>{error}</Text>} {/* Wyswietlenie komunikatu o bledzie */}
+                    
                 </Stack>
-
+                {ShowError ? <h6><div className="gap"> Błąd logowania, sprawdź dane i wprowadź je jeszcze raz. </div></h6> : null}
                 <Group justify="space-between" mt="xl">
+                    
                     <Anchor component="button" type="button" c="dimmed" onClick={toggle} size="xs">
                         {type === 'register'
                             ? 'Posiadasz konto? Zaloguj się'
                             : "Nie posiadasz konta? Zarejestruj się"}
                     </Anchor>
+                    
                     <Button type="submit" radius="xl" onClick={type === 'register' ? handleRegister : handleLogin}>
                         {type === 'register' ? "Rejestracja" : "Logowanie"}
                     </Button>

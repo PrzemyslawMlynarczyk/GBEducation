@@ -28,13 +28,18 @@ public class AspNetUsersController : ControllerBase
 
 
     [HttpPost]
-    public ActionResult<Models.AspNetUsers.AspNetUsersDTO> Register([FromBody] Models.AspNetUsers.AspNetUsers testEntity)
+    public ActionResult<Models.AspNetUsers.AspNetUsersDTO> Register([FromBody] AspNetUsers testEntity)
     {
 
         using (var session = NHibernateHelper.OpenSession())
         {
             using (var transaction = session.BeginTransaction())
             {
+                var checkEmail = session.Query<AspNetUsers>().Where(x => x.Email == testEntity.Email).ToList();
+                if(checkEmail.Count > 0)
+                {
+                    return StatusCode(404);
+                }
                 var passwordHasher = new PasswordHasher<Models.AspNetUsers.AspNetUsers>();
                 string hashedPassword = passwordHasher.HashPassword(null, testEntity.PasswordHash);
                 testEntity.PasswordHash = hashedPassword;
@@ -64,7 +69,18 @@ public class AspNetUsersController : ControllerBase
                     return StatusCode(StatusCodes.Status500InternalServerError, $"Error: {ex.Message}");
                 }
 
+                
+                
+
+
             }
+
+
         }
     }
+
+
+
+
+
 }
