@@ -3,28 +3,24 @@
   "WorkspaceRootPath": "S:\\Semestr_6\\WKCK\\MiniProjekt\\Aurora\\GBEducation\\",
   "Documents": [
     {
-      "AbsoluteMoniker": "D:0:0:{34EF0788-3ED4-478B-AE02-1B3AB5B3ACBA}|aurora.client\\aurora.client.esproj|s:\\semestr_6\\wkck\\miniprojekt\\aurora\\gbeducation\\aurora.client\\src\\pages\\auth\\auth.tsx||{0F2454B1-A556-402D-A7D0-1FDE7F99DEE0}",
-      "RelativeMoniker": "D:0:0:{34EF0788-3ED4-478B-AE02-1B3AB5B3ACBA}|aurora.client\\aurora.client.esproj|solutionrelative:aurora.client\\src\\pages\\auth\\auth.tsx||{0F2454B1-A556-402D-A7D0-1FDE7F99DEE0}"
+      "AbsoluteMoniker": "D:0:0:{B8D8E2D9-76A4-43FC-85D2-4A3AB3615F73}|Aurora.Server\\Aurora.Server.csproj|s:\\semestr_6\\wkck\\miniprojekt\\aurora\\gbeducation\\aurora.server\\persistence\\class\\database\\_004_createtable.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
+      "RelativeMoniker": "D:0:0:{B8D8E2D9-76A4-43FC-85D2-4A3AB3615F73}|Aurora.Server\\Aurora.Server.csproj|solutionrelative:aurora.server\\persistence\\class\\database\\_004_createtable.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
     },
     {
-      "AbsoluteMoniker": "D:0:0:{B8D8E2D9-76A4-43FC-85D2-4A3AB3615F73}|Aurora.Server\\Aurora.Server.csproj|s:\\semestr_6\\wkck\\miniprojekt\\aurora\\gbeducation\\aurora.server\\controllers\\aspnetusers\\aspnetuserscontroller.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
-      "RelativeMoniker": "D:0:0:{B8D8E2D9-76A4-43FC-85D2-4A3AB3615F73}|Aurora.Server\\Aurora.Server.csproj|solutionrelative:aurora.server\\controllers\\aspnetusers\\aspnetuserscontroller.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
+      "AbsoluteMoniker": "D:0:0:{B8D8E2D9-76A4-43FC-85D2-4A3AB3615F73}|Aurora.Server\\Aurora.Server.csproj|s:\\semestr_6\\wkck\\miniprojekt\\aurora\\gbeducation\\aurora.server\\persistence\\aspnetusers\\database\\_001_createtable.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
+      "RelativeMoniker": "D:0:0:{B8D8E2D9-76A4-43FC-85D2-4A3AB3615F73}|Aurora.Server\\Aurora.Server.csproj|solutionrelative:aurora.server\\persistence\\aspnetusers\\database\\_001_createtable.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
     },
     {
-      "AbsoluteMoniker": "D:0:0:{34EF0788-3ED4-478B-AE02-1B3AB5B3ACBA}|aurora.client\\aurora.client.esproj|s:\\semestr_6\\wkck\\miniprojekt\\aurora\\gbeducation\\aurora.client\\src\\pages\\auth\\auth.css||{A5401142-F49D-43DB-90B1-F57BA349E55C}",
-      "RelativeMoniker": "D:0:0:{34EF0788-3ED4-478B-AE02-1B3AB5B3ACBA}|aurora.client\\aurora.client.esproj|solutionrelative:aurora.client\\src\\pages\\auth\\auth.css||{A5401142-F49D-43DB-90B1-F57BA349E55C}"
+      "AbsoluteMoniker": "D:0:0:{B8D8E2D9-76A4-43FC-85D2-4A3AB3615F73}|Aurora.Server\\Aurora.Server.csproj|s:\\semestr_6\\wkck\\miniprojekt\\aurora\\gbeducation\\aurora.server\\models\\class\\classmapping.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
+      "RelativeMoniker": "D:0:0:{B8D8E2D9-76A4-43FC-85D2-4A3AB3615F73}|Aurora.Server\\Aurora.Server.csproj|solutionrelative:aurora.server\\models\\class\\classmapping.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
     },
     {
-      "AbsoluteMoniker": "D:0:0:{B8D8E2D9-76A4-43FC-85D2-4A3AB3615F73}|Aurora.Server\\Aurora.Server.csproj|s:\\semestr_6\\wkck\\miniprojekt\\aurora\\gbeducation\\aurora.server\\models\\aspnetusers\\iaspnetusers.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
-      "RelativeMoniker": "D:0:0:{B8D8E2D9-76A4-43FC-85D2-4A3AB3615F73}|Aurora.Server\\Aurora.Server.csproj|solutionrelative:aurora.server\\models\\aspnetusers\\iaspnetusers.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
+      "AbsoluteMoniker": "D:0:0:{B8D8E2D9-76A4-43FC-85D2-4A3AB3615F73}|Aurora.Server\\Aurora.Server.csproj|s:\\semestr_6\\wkck\\miniprojekt\\aurora\\gbeducation\\aurora.server\\models\\class\\class.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
+      "RelativeMoniker": "D:0:0:{B8D8E2D9-76A4-43FC-85D2-4A3AB3615F73}|Aurora.Server\\Aurora.Server.csproj|solutionrelative:aurora.server\\models\\class\\class.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
     },
     {
       "AbsoluteMoniker": "D:0:0:{B8D8E2D9-76A4-43FC-85D2-4A3AB3615F73}|Aurora.Server\\Aurora.Server.csproj|s:\\semestr_6\\wkck\\miniprojekt\\aurora\\gbeducation\\aurora.server\\models\\aspnetusers\\aspnetusersdto.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
       "RelativeMoniker": "D:0:0:{B8D8E2D9-76A4-43FC-85D2-4A3AB3615F73}|Aurora.Server\\Aurora.Server.csproj|solutionrelative:aurora.server\\models\\aspnetusers\\aspnetusersdto.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
-    },
-    {
-      "AbsoluteMoniker": "D:0:0:{B8D8E2D9-76A4-43FC-85D2-4A3AB3615F73}|Aurora.Server\\Aurora.Server.csproj|s:\\semestr_6\\wkck\\miniprojekt\\aurora\\gbeducation\\aurora.server\\models\\aspnetusers\\aspnetusersmapping.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
-      "RelativeMoniker": "D:0:0:{B8D8E2D9-76A4-43FC-85D2-4A3AB3615F73}|Aurora.Server\\Aurora.Server.csproj|solutionrelative:aurora.server\\models\\aspnetusers\\aspnetusersmapping.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
     },
     {
       "AbsoluteMoniker": "D:0:0:{B8D8E2D9-76A4-43FC-85D2-4A3AB3615F73}|Aurora.Server\\Aurora.Server.csproj|s:\\semestr_6\\wkck\\miniprojekt\\aurora\\gbeducation\\aurora.server\\models\\aspnetusers\\aspnetusersenum.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
@@ -35,16 +31,52 @@
       "RelativeMoniker": "D:0:0:{B8D8E2D9-76A4-43FC-85D2-4A3AB3615F73}|Aurora.Server\\Aurora.Server.csproj|solutionrelative:aurora.server\\models\\aspnetusers\\aspnetusers.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
     },
     {
-      "AbsoluteMoniker": "D:0:0:{B8D8E2D9-76A4-43FC-85D2-4A3AB3615F73}|Aurora.Server\\Aurora.Server.csproj|s:\\semestr_6\\wkck\\miniprojekt\\aurora\\gbeducation\\aurora.server\\program.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
-      "RelativeMoniker": "D:0:0:{B8D8E2D9-76A4-43FC-85D2-4A3AB3615F73}|Aurora.Server\\Aurora.Server.csproj|solutionrelative:aurora.server\\program.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
+      "AbsoluteMoniker": "D:0:0:{B8D8E2D9-76A4-43FC-85D2-4A3AB3615F73}|Aurora.Server\\Aurora.Server.csproj|s:\\semestr_6\\wkck\\miniprojekt\\aurora\\gbeducation\\aurora.server\\controllers\\aspnetusers\\aspnetuserscontroller.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
+      "RelativeMoniker": "D:0:0:{B8D8E2D9-76A4-43FC-85D2-4A3AB3615F73}|Aurora.Server\\Aurora.Server.csproj|solutionrelative:aurora.server\\controllers\\aspnetusers\\aspnetuserscontroller.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
     },
     {
-      "AbsoluteMoniker": "D:0:0:{B8D8E2D9-76A4-43FC-85D2-4A3AB3615F73}|Aurora.Server\\Aurora.Server.csproj|s:\\semestr_6\\wkck\\miniprojekt\\aurora\\gbeducation\\aurora.server\\persistence\\aspnetusers\\database\\_001_createtable.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
-      "RelativeMoniker": "D:0:0:{B8D8E2D9-76A4-43FC-85D2-4A3AB3615F73}|Aurora.Server\\Aurora.Server.csproj|solutionrelative:aurora.server\\persistence\\aspnetusers\\database\\_001_createtable.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
+      "AbsoluteMoniker": "D:0:0:{B8D8E2D9-76A4-43FC-85D2-4A3AB3615F73}|Aurora.Server\\Aurora.Server.csproj|s:\\semestr_6\\wkck\\miniprojekt\\aurora\\gbeducation\\aurora.server\\models\\class\\iclass.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
+      "RelativeMoniker": "D:0:0:{B8D8E2D9-76A4-43FC-85D2-4A3AB3615F73}|Aurora.Server\\Aurora.Server.csproj|solutionrelative:aurora.server\\models\\class\\iclass.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
+    },
+    {
+      "AbsoluteMoniker": "D:0:0:{B8D8E2D9-76A4-43FC-85D2-4A3AB3615F73}|Aurora.Server\\Aurora.Server.csproj|s:\\semestr_6\\wkck\\miniprojekt\\aurora\\gbeducation\\aurora.server\\models\\aspnetusers\\aspnetusersmapping.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
+      "RelativeMoniker": "D:0:0:{B8D8E2D9-76A4-43FC-85D2-4A3AB3615F73}|Aurora.Server\\Aurora.Server.csproj|solutionrelative:aurora.server\\models\\aspnetusers\\aspnetusersmapping.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
+    },
+    {
+      "AbsoluteMoniker": "D:0:0:{B8D8E2D9-76A4-43FC-85D2-4A3AB3615F73}|Aurora.Server\\Aurora.Server.csproj|s:\\semestr_6\\wkck\\miniprojekt\\aurora\\gbeducation\\aurora.server\\models\\aspnetusers\\iaspnetusers.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
+      "RelativeMoniker": "D:0:0:{B8D8E2D9-76A4-43FC-85D2-4A3AB3615F73}|Aurora.Server\\Aurora.Server.csproj|solutionrelative:aurora.server\\models\\aspnetusers\\iaspnetusers.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
+    },
+    {
+      "AbsoluteMoniker": "D:0:0:{B8D8E2D9-76A4-43FC-85D2-4A3AB3615F73}|Aurora.Server\\Aurora.Server.csproj|s:\\semestr_6\\wkck\\miniprojekt\\aurora\\gbeducation\\aurora.server\\persistence\\aspnetusers\\database\\_002_createtable.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
+      "RelativeMoniker": "D:0:0:{B8D8E2D9-76A4-43FC-85D2-4A3AB3615F73}|Aurora.Server\\Aurora.Server.csproj|solutionrelative:aurora.server\\persistence\\aspnetusers\\database\\_002_createtable.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
+    },
+    {
+      "AbsoluteMoniker": "D:0:0:{34EF0788-3ED4-478B-AE02-1B3AB5B3ACBA}|aurora.client\\aurora.client.esproj|s:\\semestr_6\\wkck\\miniprojekt\\aurora\\gbeducation\\aurora.client\\src\\pages\\myclass\\myclass.tsx||{0F2454B1-A556-402D-A7D0-1FDE7F99DEE0}",
+      "RelativeMoniker": "D:0:0:{34EF0788-3ED4-478B-AE02-1B3AB5B3ACBA}|aurora.client\\aurora.client.esproj|solutionrelative:aurora.client\\src\\pages\\myclass\\myclass.tsx||{0F2454B1-A556-402D-A7D0-1FDE7F99DEE0}"
+    },
+    {
+      "AbsoluteMoniker": "D:0:0:{34EF0788-3ED4-478B-AE02-1B3AB5B3ACBA}|aurora.client\\aurora.client.esproj|s:\\semestr_6\\wkck\\miniprojekt\\aurora\\gbeducation\\aurora.client\\src\\pages\\acceptance\\acceptance.tsx||{0F2454B1-A556-402D-A7D0-1FDE7F99DEE0}",
+      "RelativeMoniker": "D:0:0:{34EF0788-3ED4-478B-AE02-1B3AB5B3ACBA}|aurora.client\\aurora.client.esproj|solutionrelative:aurora.client\\src\\pages\\acceptance\\acceptance.tsx||{0F2454B1-A556-402D-A7D0-1FDE7F99DEE0}"
+    },
+    {
+      "AbsoluteMoniker": "D:0:0:{34EF0788-3ED4-478B-AE02-1B3AB5B3ACBA}|aurora.client\\aurora.client.esproj|s:\\semestr_6\\wkck\\miniprojekt\\aurora\\gbeducation\\aurora.client\\src\\pages\\auth\\auth.tsx||{0F2454B1-A556-402D-A7D0-1FDE7F99DEE0}",
+      "RelativeMoniker": "D:0:0:{34EF0788-3ED4-478B-AE02-1B3AB5B3ACBA}|aurora.client\\aurora.client.esproj|solutionrelative:aurora.client\\src\\pages\\auth\\auth.tsx||{0F2454B1-A556-402D-A7D0-1FDE7F99DEE0}"
+    },
+    {
+      "AbsoluteMoniker": "D:0:0:{34EF0788-3ED4-478B-AE02-1B3AB5B3ACBA}|aurora.client\\aurora.client.esproj|s:\\semestr_6\\wkck\\miniprojekt\\aurora\\gbeducation\\aurora.client\\src\\pages\\profile\\profile.tsx||{0F2454B1-A556-402D-A7D0-1FDE7F99DEE0}",
+      "RelativeMoniker": "D:0:0:{34EF0788-3ED4-478B-AE02-1B3AB5B3ACBA}|aurora.client\\aurora.client.esproj|solutionrelative:aurora.client\\src\\pages\\profile\\profile.tsx||{0F2454B1-A556-402D-A7D0-1FDE7F99DEE0}"
     },
     {
       "AbsoluteMoniker": "D:0:0:{B8D8E2D9-76A4-43FC-85D2-4A3AB3615F73}|Aurora.Server\\Aurora.Server.csproj|s:\\semestr_6\\wkck\\miniprojekt\\aurora\\gbeducation\\aurora.server\\persistence\\aspnetusers\\database\\_003_createtable.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
       "RelativeMoniker": "D:0:0:{B8D8E2D9-76A4-43FC-85D2-4A3AB3615F73}|Aurora.Server\\Aurora.Server.csproj|solutionrelative:aurora.server\\persistence\\aspnetusers\\database\\_003_createtable.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
+    },
+    {
+      "AbsoluteMoniker": "D:0:0:{B8D8E2D9-76A4-43FC-85D2-4A3AB3615F73}|Aurora.Server\\Aurora.Server.csproj|s:\\semestr_6\\wkck\\miniprojekt\\aurora\\gbeducation\\aurora.server\\program.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
+      "RelativeMoniker": "D:0:0:{B8D8E2D9-76A4-43FC-85D2-4A3AB3615F73}|Aurora.Server\\Aurora.Server.csproj|solutionrelative:aurora.server\\program.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
+    },
+    {
+      "AbsoluteMoniker": "D:0:0:{B8D8E2D9-76A4-43FC-85D2-4A3AB3615F73}|Aurora.Server\\Aurora.Server.csproj|s:\\semestr_6\\wkck\\miniprojekt\\aurora\\gbeducation\\aurora.server\\persistence\\class\\classrepository.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
+      "RelativeMoniker": "D:0:0:{B8D8E2D9-76A4-43FC-85D2-4A3AB3615F73}|Aurora.Server\\Aurora.Server.csproj|solutionrelative:aurora.server\\persistence\\class\\classrepository.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
     },
     {
       "AbsoluteMoniker": "D:0:0:{B8D8E2D9-76A4-43FC-85D2-4A3AB3615F73}|Aurora.Server\\Aurora.Server.csproj|s:\\semestr_6\\wkck\\miniprojekt\\aurora\\gbeducation\\aurora.server\\persistence\\aspnetusers\\aspnetusersrepository.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
@@ -55,16 +87,12 @@
       "RelativeMoniker": "D:0:0:{34EF0788-3ED4-478B-AE02-1B3AB5B3ACBA}|aurora.client\\aurora.client.esproj|solutionrelative:aurora.client\\src\\layouts\\header\\headermenu.tsx||{0F2454B1-A556-402D-A7D0-1FDE7F99DEE0}"
     },
     {
+      "AbsoluteMoniker": "D:0:0:{34EF0788-3ED4-478B-AE02-1B3AB5B3ACBA}|aurora.client\\aurora.client.esproj|s:\\semestr_6\\wkck\\miniprojekt\\aurora\\gbeducation\\aurora.client\\src\\pages\\auth\\auth.css||{A5401142-F49D-43DB-90B1-F57BA349E55C}",
+      "RelativeMoniker": "D:0:0:{34EF0788-3ED4-478B-AE02-1B3AB5B3ACBA}|aurora.client\\aurora.client.esproj|solutionrelative:aurora.client\\src\\pages\\auth\\auth.css||{A5401142-F49D-43DB-90B1-F57BA349E55C}"
+    },
+    {
       "AbsoluteMoniker": "D:0:0:{B8D8E2D9-76A4-43FC-85D2-4A3AB3615F73}|Aurora.Server\\Aurora.Server.csproj|s:\\semestr_6\\wkck\\miniprojekt\\aurora\\gbeducation\\aurora.server\\nhibernatehelper.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
       "RelativeMoniker": "D:0:0:{B8D8E2D9-76A4-43FC-85D2-4A3AB3615F73}|Aurora.Server\\Aurora.Server.csproj|solutionrelative:aurora.server\\nhibernatehelper.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
-    },
-    {
-      "AbsoluteMoniker": "D:0:0:{B8D8E2D9-76A4-43FC-85D2-4A3AB3615F73}|Aurora.Server\\Aurora.Server.csproj|s:\\semestr_6\\wkck\\miniprojekt\\aurora\\gbeducation\\aurora.server\\persistence\\aspnetusers\\database\\_002_createtable.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
-      "RelativeMoniker": "D:0:0:{B8D8E2D9-76A4-43FC-85D2-4A3AB3615F73}|Aurora.Server\\Aurora.Server.csproj|solutionrelative:aurora.server\\persistence\\aspnetusers\\database\\_002_createtable.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
-    },
-    {
-      "AbsoluteMoniker": "D:0:0:{34EF0788-3ED4-478B-AE02-1B3AB5B3ACBA}|aurora.client\\aurora.client.esproj|s:\\semestr_6\\wkck\\miniprojekt\\aurora\\gbeducation\\aurora.client\\src\\pages\\acceptance\\acceptance.tsx||{0F2454B1-A556-402D-A7D0-1FDE7F99DEE0}",
-      "RelativeMoniker": "D:0:0:{34EF0788-3ED4-478B-AE02-1B3AB5B3ACBA}|aurora.client\\aurora.client.esproj|solutionrelative:aurora.client\\src\\pages\\acceptance\\acceptance.tsx||{0F2454B1-A556-402D-A7D0-1FDE7F99DEE0}"
     },
     {
       "AbsoluteMoniker": "D:0:0:{34EF0788-3ED4-478B-AE02-1B3AB5B3ACBA}|aurora.client\\aurora.client.esproj|s:\\semestr_6\\wkck\\miniprojekt\\aurora\\gbeducation\\aurora.client\\src\\pages\\class\\class.tsx||{0F2454B1-A556-402D-A7D0-1FDE7F99DEE0}",
@@ -85,7 +113,7 @@
       "DocumentGroups": [
         {
           "DockedWidth": 134,
-          "SelectedChildIndex": 18,
+          "SelectedChildIndex": 5,
           "Children": [
             {
               "$type": "Bookmark",
@@ -101,7 +129,92 @@
             },
             {
               "$type": "Document",
+              "DocumentIndex": 12,
+              "Title": "MyClass.tsx",
+              "DocumentMoniker": "S:\\Semestr_6\\WKCK\\MiniProjekt\\Aurora\\GBEducation\\aurora.client\\src\\pages\\MyClass\\MyClass.tsx",
+              "RelativeDocumentMoniker": "aurora.client\\src\\pages\\MyClass\\MyClass.tsx",
+              "ToolTip": "S:\\Semestr_6\\WKCK\\MiniProjekt\\Aurora\\GBEducation\\aurora.client\\src\\pages\\MyClass\\MyClass.tsx",
+              "RelativeToolTip": "aurora.client\\src\\pages\\MyClass\\MyClass.tsx",
+              "ViewState": "AQIAAAAAAAAAAAAAAAAAACQAAAAMAAAA",
+              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.003213|",
+              "WhenOpened": "2024-05-12T09:19:52.289Z"
+            },
+            {
+              "$type": "Document",
               "DocumentIndex": 2,
+              "Title": "ClassMapping.cs",
+              "DocumentMoniker": "S:\\Semestr_6\\WKCK\\MiniProjekt\\Aurora\\GBEducation\\Aurora.Server\\Models\\Class\\ClassMapping.cs",
+              "RelativeDocumentMoniker": "Aurora.Server\\Models\\Class\\ClassMapping.cs",
+              "ToolTip": "S:\\Semestr_6\\WKCK\\MiniProjekt\\Aurora\\GBEducation\\Aurora.Server\\Models\\Class\\ClassMapping.cs",
+              "RelativeToolTip": "Aurora.Server\\Models\\Class\\ClassMapping.cs",
+              "ViewState": "AQIAAAMAAAAAAAAAAAAAAAoAAAATAAAA",
+              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
+              "WhenOpened": "2024-05-11T16:16:40.316Z"
+            },
+            {
+              "$type": "Document",
+              "DocumentIndex": 0,
+              "Title": "_004_CreateTable.cs",
+              "DocumentMoniker": "S:\\Semestr_6\\WKCK\\MiniProjekt\\Aurora\\GBEducation\\Aurora.Server\\Persistence\\Class\\Database\\_004_CreateTable.cs",
+              "RelativeDocumentMoniker": "Aurora.Server\\Persistence\\Class\\Database\\_004_CreateTable.cs",
+              "ToolTip": "S:\\Semestr_6\\WKCK\\MiniProjekt\\Aurora\\GBEducation\\Aurora.Server\\Persistence\\Class\\Database\\_004_CreateTable.cs",
+              "RelativeToolTip": "Aurora.Server\\Persistence\\Class\\Database\\_004_CreateTable.cs",
+              "ViewState": "AQIAAAAAAAAAAAAAAAAAAA0AAAAAAAAA",
+              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
+              "WhenOpened": "2024-05-11T16:12:01.592Z",
+              "EditorCaption": ""
+            },
+            {
+              "$type": "Document",
+              "DocumentIndex": 18,
+              "Title": "ClassRepository.cs",
+              "DocumentMoniker": "S:\\Semestr_6\\WKCK\\MiniProjekt\\Aurora\\GBEducation\\Aurora.Server\\Persistence\\Class\\ClassRepository.cs",
+              "RelativeDocumentMoniker": "Aurora.Server\\Persistence\\Class\\ClassRepository.cs",
+              "ToolTip": "S:\\Semestr_6\\WKCK\\MiniProjekt\\Aurora\\GBEducation\\Aurora.Server\\Persistence\\Class\\ClassRepository.cs",
+              "RelativeToolTip": "Aurora.Server\\Persistence\\Class\\ClassRepository.cs",
+              "ViewState": "AQIAAAAAAAAAAAAAAAAAAAAAAAAAAAAA",
+              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
+              "WhenOpened": "2024-05-11T16:11:36.661Z"
+            },
+            {
+              "$type": "Document",
+              "DocumentIndex": 8,
+              "Title": "IClass.cs",
+              "DocumentMoniker": "S:\\Semestr_6\\WKCK\\MiniProjekt\\Aurora\\GBEducation\\Aurora.Server\\Models\\Class\\IClass.cs",
+              "RelativeDocumentMoniker": "Aurora.Server\\Models\\Class\\IClass.cs",
+              "ToolTip": "S:\\Semestr_6\\WKCK\\MiniProjekt\\Aurora\\GBEducation\\Aurora.Server\\Models\\Class\\IClass.cs",
+              "RelativeToolTip": "Aurora.Server\\Models\\Class\\IClass.cs",
+              "ViewState": "AQIAAAAAAAAAAAAAAAAAAAAAAAAAAAAA",
+              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
+              "WhenOpened": "2024-05-11T16:10:17.386Z"
+            },
+            {
+              "$type": "Document",
+              "DocumentIndex": 3,
+              "Title": "Class.cs",
+              "DocumentMoniker": "S:\\Semestr_6\\WKCK\\MiniProjekt\\Aurora\\GBEducation\\Aurora.Server\\Models\\Class\\Class.cs",
+              "RelativeDocumentMoniker": "Aurora.Server\\Models\\Class\\Class.cs",
+              "ToolTip": "S:\\Semestr_6\\WKCK\\MiniProjekt\\Aurora\\GBEducation\\Aurora.Server\\Models\\Class\\Class.cs",
+              "RelativeToolTip": "Aurora.Server\\Models\\Class\\Class.cs",
+              "ViewState": "AQIAAAAAAAAAAAAAAAAAAAYAAAA3AAAA",
+              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
+              "WhenOpened": "2024-05-11T15:49:37.151Z"
+            },
+            {
+              "$type": "Document",
+              "DocumentIndex": 15,
+              "Title": "Profile.tsx",
+              "DocumentMoniker": "S:\\Semestr_6\\WKCK\\MiniProjekt\\Aurora\\GBEducation\\aurora.client\\src\\pages\\Profile\\Profile.tsx",
+              "RelativeDocumentMoniker": "aurora.client\\src\\pages\\Profile\\Profile.tsx",
+              "ToolTip": "S:\\Semestr_6\\WKCK\\MiniProjekt\\Aurora\\GBEducation\\aurora.client\\src\\pages\\Profile\\Profile.tsx",
+              "RelativeToolTip": "aurora.client\\src\\pages\\Profile\\Profile.tsx",
+              "ViewState": "AQIAACYAAAAAAAAAAAAAACUAAAAAAAAA",
+              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.003213|",
+              "WhenOpened": "2024-05-09T19:43:44.802Z"
+            },
+            {
+              "$type": "Document",
+              "DocumentIndex": 21,
               "Title": "Auth.css",
               "DocumentMoniker": "S:\\Semestr_6\\WKCK\\MiniProjekt\\Aurora\\GBEducation\\aurora.client\\src\\pages\\Auth\\Auth.css",
               "RelativeDocumentMoniker": "aurora.client\\src\\pages\\Auth\\Auth.css",
@@ -109,8 +222,7 @@
               "RelativeToolTip": "aurora.client\\src\\pages\\Auth\\Auth.css",
               "ViewState": "AQIAAAAAAAAAAAAAAAAAABMAAAAFAAAA",
               "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.003000|",
-              "WhenOpened": "2024-05-09T18:18:06.105Z",
-              "EditorCaption": ""
+              "WhenOpened": "2024-05-09T18:18:06.105Z"
             },
             {
               "$type": "Document",
@@ -120,62 +232,61 @@
               "RelativeDocumentMoniker": "Aurora.Server\\Models\\AspNetUsers\\AspNetUsersDTO.cs",
               "ToolTip": "S:\\Semestr_6\\WKCK\\MiniProjekt\\Aurora\\GBEducation\\Aurora.Server\\Models\\AspNetUsers\\AspNetUsersDTO.cs",
               "RelativeToolTip": "Aurora.Server\\Models\\AspNetUsers\\AspNetUsersDTO.cs",
-              "ViewState": "AQIAAAAAAAAAAAAAAAAAAAcAAAAUAAAA",
+              "ViewState": "AQIAAAAAAAAAAAAAAAAAAAcAAAAqAAAA",
               "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
               "WhenOpened": "2024-05-09T11:31:28.382Z"
             },
             {
               "$type": "Document",
-              "DocumentIndex": 5,
+              "DocumentIndex": 9,
               "Title": "AspNetUsersMapping.cs",
               "DocumentMoniker": "S:\\Semestr_6\\WKCK\\MiniProjekt\\Aurora\\GBEducation\\Aurora.Server\\Models\\AspNetUsers\\AspNetUsersMapping.cs",
               "RelativeDocumentMoniker": "Aurora.Server\\Models\\AspNetUsers\\AspNetUsersMapping.cs",
               "ToolTip": "S:\\Semestr_6\\WKCK\\MiniProjekt\\Aurora\\GBEducation\\Aurora.Server\\Models\\AspNetUsers\\AspNetUsersMapping.cs",
               "RelativeToolTip": "Aurora.Server\\Models\\AspNetUsers\\AspNetUsersMapping.cs",
-              "ViewState": "AQIAAAgAAAAAAAAAAAAAwAwAAAAWAAAA",
+              "ViewState": "AQIAAAYAAAAAAAAAAAAUwBoAAAAlAAAA",
               "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
               "WhenOpened": "2024-05-09T11:05:39.541Z"
             },
             {
               "$type": "Document",
-              "DocumentIndex": 7,
+              "DocumentIndex": 6,
               "Title": "AspNetUsers.cs",
               "DocumentMoniker": "S:\\Semestr_6\\WKCK\\MiniProjekt\\Aurora\\GBEducation\\Aurora.Server\\Models\\AspNetUsers\\AspNetUsers.cs",
               "RelativeDocumentMoniker": "Aurora.Server\\Models\\AspNetUsers\\AspNetUsers.cs",
               "ToolTip": "S:\\Semestr_6\\WKCK\\MiniProjekt\\Aurora\\GBEducation\\Aurora.Server\\Models\\AspNetUsers\\AspNetUsers.cs",
               "RelativeToolTip": "Aurora.Server\\Models\\AspNetUsers\\AspNetUsers.cs",
-              "ViewState": "AQIAAAAAAAAAAAAAAAAAAAgAAAAIAAAA",
+              "ViewState": "AQIAAAAAAAAAAAAAAAAAAAsAAAA1AAAA",
               "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
               "WhenOpened": "2024-05-09T11:01:25.606Z"
             },
             {
               "$type": "Document",
-              "DocumentIndex": 1,
+              "DocumentIndex": 7,
               "Title": "AspNetUsersController.cs",
               "DocumentMoniker": "S:\\Semestr_6\\WKCK\\MiniProjekt\\Aurora\\GBEducation\\Aurora.Server\\Controllers\\AspNetUsers\\AspNetUsersController.cs",
               "RelativeDocumentMoniker": "Aurora.Server\\Controllers\\AspNetUsers\\AspNetUsersController.cs",
               "ToolTip": "S:\\Semestr_6\\WKCK\\MiniProjekt\\Aurora\\GBEducation\\Aurora.Server\\Controllers\\AspNetUsers\\AspNetUsersController.cs",
               "RelativeToolTip": "Aurora.Server\\Controllers\\AspNetUsers\\AspNetUsersController.cs",
-              "ViewState": "AQIAABUAAAAAAAAAAAAAwCcAAAARAAAA",
+              "ViewState": "AQIAAAwAAAAAAAAAAAAAABwAAAAnAAAA",
               "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
-              "WhenOpened": "2024-05-09T11:12:16.591Z",
-              "EditorCaption": ""
+              "WhenOpened": "2024-05-09T11:12:16.591Z"
             },
             {
               "$type": "Document",
-              "DocumentIndex": 8,
+              "DocumentIndex": 17,
               "Title": "Program.cs",
               "DocumentMoniker": "S:\\Semestr_6\\WKCK\\MiniProjekt\\Aurora\\GBEducation\\Aurora.Server\\Program.cs",
               "RelativeDocumentMoniker": "Aurora.Server\\Program.cs",
               "ToolTip": "S:\\Semestr_6\\WKCK\\MiniProjekt\\Aurora\\GBEducation\\Aurora.Server\\Program.cs",
               "RelativeToolTip": "Aurora.Server\\Program.cs",
-              "ViewState": "AQIAABsAAAAAAAAAAAAAACsAAABwAAAA",
+              "ViewState": "AQIAADMAAAAAAAAAAAASwEYAAAABAAAA",
               "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
               "WhenOpened": "2024-05-09T10:59:29.775Z"
             },
             {
               "$type": "Document",
-              "DocumentIndex": 6,
+              "DocumentIndex": 5,
               "Title": "AspNetUsersEnum.cs",
               "DocumentMoniker": "S:\\Semestr_6\\WKCK\\MiniProjekt\\Aurora\\GBEducation\\Aurora.Server\\Models\\AspNetUsers\\AspNetUsersEnum.cs",
               "RelativeDocumentMoniker": "Aurora.Server\\Models\\AspNetUsers\\AspNetUsersEnum.cs",
@@ -187,7 +298,7 @@
             },
             {
               "$type": "Document",
-              "DocumentIndex": 3,
+              "DocumentIndex": 10,
               "Title": "IAspNetUsers.cs",
               "DocumentMoniker": "S:\\Semestr_6\\WKCK\\MiniProjekt\\Aurora\\GBEducation\\Aurora.Server\\Models\\AspNetUsers\\IAspNetUsers.cs",
               "RelativeDocumentMoniker": "Aurora.Server\\Models\\AspNetUsers\\IAspNetUsers.cs",
@@ -199,19 +310,19 @@
             },
             {
               "$type": "Document",
-              "DocumentIndex": 9,
+              "DocumentIndex": 1,
               "Title": "_001_CreateTable.cs",
               "DocumentMoniker": "S:\\Semestr_6\\WKCK\\MiniProjekt\\Aurora\\GBEducation\\Aurora.Server\\Persistence\\AspNetUsers\\Database\\_001_CreateTable.cs",
               "RelativeDocumentMoniker": "Aurora.Server\\Persistence\\AspNetUsers\\Database\\_001_CreateTable.cs",
               "ToolTip": "S:\\Semestr_6\\WKCK\\MiniProjekt\\Aurora\\GBEducation\\Aurora.Server\\Persistence\\AspNetUsers\\Database\\_001_CreateTable.cs",
               "RelativeToolTip": "Aurora.Server\\Persistence\\AspNetUsers\\Database\\_001_CreateTable.cs",
-              "ViewState": "AQIAAAUAAAAAAAAAAAAAwBoAAAApAAAA",
+              "ViewState": "AQIAAAgAAAAAAAAAAAAUwBwAAAAFAAAA",
               "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
               "WhenOpened": "2024-05-09T11:10:52.272Z"
             },
             {
               "$type": "Document",
-              "DocumentIndex": 11,
+              "DocumentIndex": 19,
               "Title": "AspNetUsersRepository.cs",
               "DocumentMoniker": "S:\\Semestr_6\\WKCK\\MiniProjekt\\Aurora\\GBEducation\\Aurora.Server\\Persistence\\AspNetUsers\\AspNetUsersRepository.cs",
               "RelativeDocumentMoniker": "Aurora.Server\\Persistence\\AspNetUsers\\AspNetUsersRepository.cs",
@@ -223,7 +334,7 @@
             },
             {
               "$type": "Document",
-              "DocumentIndex": 14,
+              "DocumentIndex": 11,
               "Title": "_002_CreateTable.cs",
               "DocumentMoniker": "S:\\Semestr_6\\WKCK\\MiniProjekt\\Aurora\\GBEducation\\Aurora.Server\\Persistence\\AspNetUsers\\Database\\_002_CreateTable.cs",
               "RelativeDocumentMoniker": "Aurora.Server\\Persistence\\AspNetUsers\\Database\\_002_CreateTable.cs",
@@ -235,19 +346,19 @@
             },
             {
               "$type": "Document",
-              "DocumentIndex": 10,
+              "DocumentIndex": 16,
               "Title": "_003_CreateTable.cs",
               "DocumentMoniker": "S:\\Semestr_6\\WKCK\\MiniProjekt\\Aurora\\GBEducation\\Aurora.Server\\Persistence\\AspNetUsers\\Database\\_003_CreateTable.cs",
               "RelativeDocumentMoniker": "Aurora.Server\\Persistence\\AspNetUsers\\Database\\_003_CreateTable.cs",
               "ToolTip": "S:\\Semestr_6\\WKCK\\MiniProjekt\\Aurora\\GBEducation\\Aurora.Server\\Persistence\\AspNetUsers\\Database\\_003_CreateTable.cs",
               "RelativeToolTip": "Aurora.Server\\Persistence\\AspNetUsers\\Database\\_003_CreateTable.cs",
-              "ViewState": "AQIAAAAAAAAAAAAAAAAAAAUAAAAKAAAA",
+              "ViewState": "AQIAAAAAAAAAAAAAAAAAAAUAAAASAAAA",
               "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
               "WhenOpened": "2024-05-09T11:21:05.626Z"
             },
             {
               "$type": "Document",
-              "DocumentIndex": 13,
+              "DocumentIndex": 22,
               "Title": "NHibernateHelper.cs",
               "DocumentMoniker": "S:\\Semestr_6\\WKCK\\MiniProjekt\\Aurora\\GBEducation\\Aurora.Server\\NHibernateHelper.cs",
               "RelativeDocumentMoniker": "Aurora.Server\\NHibernateHelper.cs",
@@ -259,19 +370,19 @@
             },
             {
               "$type": "Document",
-              "DocumentIndex": 12,
+              "DocumentIndex": 20,
               "Title": "HeaderMenu.tsx",
               "DocumentMoniker": "S:\\Semestr_6\\WKCK\\MiniProjekt\\Aurora\\GBEducation\\aurora.client\\src\\layouts\\Header\\HeaderMenu.tsx",
               "RelativeDocumentMoniker": "aurora.client\\src\\layouts\\Header\\HeaderMenu.tsx",
               "ToolTip": "S:\\Semestr_6\\WKCK\\MiniProjekt\\Aurora\\GBEducation\\aurora.client\\src\\layouts\\Header\\HeaderMenu.tsx",
               "RelativeToolTip": "aurora.client\\src\\layouts\\Header\\HeaderMenu.tsx",
-              "ViewState": "AQIAAAcAAAAAAAAAAAAAABMAAAArAAAA",
+              "ViewState": "AQIAAAAAAAAAAAAAAAAAAAAAAAA3AAAA",
               "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.003213|",
               "WhenOpened": "2024-05-09T11:22:13.764Z"
             },
             {
               "$type": "Document",
-              "DocumentIndex": 16,
+              "DocumentIndex": 23,
               "Title": "Class.tsx",
               "DocumentMoniker": "S:\\Semestr_6\\WKCK\\MiniProjekt\\Aurora\\GBEducation\\aurora.client\\src\\pages\\Class\\Class.tsx",
               "RelativeDocumentMoniker": "aurora.client\\src\\pages\\Class\\Class.tsx",
@@ -283,32 +394,31 @@
             },
             {
               "$type": "Document",
-              "DocumentIndex": 0,
+              "DocumentIndex": 14,
               "Title": "Auth.tsx",
               "DocumentMoniker": "S:\\Semestr_6\\WKCK\\MiniProjekt\\Aurora\\GBEducation\\aurora.client\\src\\pages\\Auth\\Auth.tsx",
               "RelativeDocumentMoniker": "aurora.client\\src\\pages\\Auth\\Auth.tsx",
               "ToolTip": "S:\\Semestr_6\\WKCK\\MiniProjekt\\Aurora\\GBEducation\\aurora.client\\src\\pages\\Auth\\Auth.tsx",
               "RelativeToolTip": "aurora.client\\src\\pages\\Auth\\Auth.tsx",
-              "ViewState": "AQIAABMAAAAAAAAAAAAuwB4AAAATAAAA",
+              "ViewState": "AQIAAD0AAAAAAAAAAAAgwEsAAAAWAAAA",
               "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.003213|",
-              "WhenOpened": "2024-05-05T16:13:58.352Z",
-              "EditorCaption": ""
+              "WhenOpened": "2024-05-05T16:13:58.352Z"
             },
             {
               "$type": "Document",
-              "DocumentIndex": 15,
+              "DocumentIndex": 13,
               "Title": "Acceptance.tsx",
               "DocumentMoniker": "S:\\Semestr_6\\WKCK\\MiniProjekt\\Aurora\\GBEducation\\aurora.client\\src\\pages\\Acceptance\\Acceptance.tsx",
               "RelativeDocumentMoniker": "aurora.client\\src\\pages\\Acceptance\\Acceptance.tsx",
               "ToolTip": "S:\\Semestr_6\\WKCK\\MiniProjekt\\Aurora\\GBEducation\\aurora.client\\src\\pages\\Acceptance\\Acceptance.tsx",
               "RelativeToolTip": "aurora.client\\src\\pages\\Acceptance\\Acceptance.tsx",
-              "ViewState": "AQIAAFMAAAAAAAAAAAAQwFwAAAA5AAAA",
+              "ViewState": "AQIAAC8AAAAAAAAAAAAiwD0AAAAoAAAA",
               "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.003213|",
               "WhenOpened": "2024-05-05T16:12:29.757Z"
             },
             {
               "$type": "Document",
-              "DocumentIndex": 17,
+              "DocumentIndex": 24,
               "Title": "Acceptance.module.css",
               "DocumentMoniker": "S:\\Semestr_6\\WKCK\\MiniProjekt\\Aurora\\GBEducation\\aurora.client\\src\\pages\\Acceptance\\Acceptance.module.css",
               "RelativeDocumentMoniker": "aurora.client\\src\\pages\\Acceptance\\Acceptance.module.css",
@@ -320,7 +430,7 @@
             },
             {
               "$type": "Document",
-              "DocumentIndex": 18,
+              "DocumentIndex": 25,
               "Title": "Microsoft.Common.CurrentVersion.targets",
               "DocumentMoniker": "C:\\Program Files\\Microsoft Visual Studio\\2022\\Community\\MSBuild\\Current\\Bin\\amd64\\Microsoft.Common.CurrentVersion.targets",
               "ToolTip": "C:\\Program Files\\Microsoft Visual Studio\\2022\\Community\\MSBuild\\Current\\Bin\\amd64\\Microsoft.Common.CurrentVersion.targets",

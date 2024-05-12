@@ -3,7 +3,7 @@ using Microsoft.AspNetCore.Http.HttpResults;
 
 namespace Aurora.Server.Persistence.AspNetUsers.Database
 {
-    [Migration(003)] // Unique identifier for the migration
+    [Migration(004)] // Unique identifier for the migration
     public class CreateUserClaimsTable : Migration
     {
         public override void Up()

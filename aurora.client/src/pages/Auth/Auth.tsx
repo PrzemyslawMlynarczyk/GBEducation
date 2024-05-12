@@ -15,8 +15,7 @@ import {
 } from '@mantine/core';
 import './Auth.css';
 import '@mantine/core/styles.css';
-/*import { checkUserLoggedIn } from "../../features/getCookies/getCookies";
-*/
+
 
 export default function Auth(props) {
     const [type, toggle] = useToggle(['login', 'register']);

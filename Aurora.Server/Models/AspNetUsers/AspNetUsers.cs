@@ -8,9 +8,9 @@ namespace Aurora.Server.Models.AspNetUsers
        
         virtual public string? name { get; set; }
         virtual public string? surname { get; set; }
-        virtual public string? login { get; set; }
-       
-       
+
+        public virtual Guid? FK_idclass { get; set; }
+
 
         public AspNetUsers() : base()
         {

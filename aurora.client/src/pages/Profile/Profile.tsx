@@ -11,13 +11,40 @@ import '@mantine/dropzone/styles.css';
 export default function Profile(props: Partial<DropzoneProps>) {
     const [opened, { open, close }] = useDisclosure(false);
     const [visible, { toggle }] = useDisclosure(false);
+    const [user, setUser] = useState({}); 
+
+    useEffect(() => {
+        fetchData();
+    }, []);
+
+    const fetchData = async () => {
+        try {
+            const response = await fetch('https://localhost:7287/api/AspNetUsers/info',
+                {
+                    credentials: 'include',
+
+                });
+
+            if (!response.ok) {
+                throw new Error('Network response was not ok');
+            }
+            const data = await response.json();
+            
+            setUser(data); 
+        } catch (error) {
+            console.error('Error fetching user data:', error);
+        }
+    };
+
+
+
     return (
         <div>
             <div className={classes.header}>
                 <HeaderMenu />
             </div>
             <div className={classes.breadcrum}>
-                <h2> Profil </h2>
+                <h2>Witaj {user.name} { user.surname} ! </h2>
             </div>
             <div className={classes.recommend}>
                 <Paper shadow="xl" p="xl">

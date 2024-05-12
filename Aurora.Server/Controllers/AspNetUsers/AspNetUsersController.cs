@@ -7,6 +7,7 @@ using Microsoft.AspNetCore.Identity;
 using Microsoft.AspNetCore.Cors;
 using Microsoft.AspNetCore.Mvc;
 using Aurora.Server.Models.AspNetUsers;
+using NHibernate.Linq;
 
 [EnableCors("AllowAllOrigins")]
 [Route("api/[controller]")]
@@ -16,13 +17,19 @@ public class AspNetUsersController : ControllerBase
 {
     private Persistence.AspNetUsers.AspNetUsersRepository _AspNetUsersRepository = new Persistence.AspNetUsers.AspNetUsersRepository();
     [HttpGet]
-    public ActionResult<IEnumerable<Models.AspNetUsers.AspNetUsers>> GetAll()
+    public ActionResult<IEnumerable<Models.AspNetUsers.AspNetUsersDTO>> GetAll()
     {
-
+        //pobiera wszystkich uzytkownikow
         using (var session = NHibernateHelper.OpenSession())
         {
-            var students = session.Query<Models.AspNetUsers.AspNetUsers>().ToList();
-            return Ok(students);
+            var users = session.Query<Models.AspNetUsers.AspNetUsers>().ToList();
+            var usersDTO = users.Select(user => new Models.AspNetUsers.AspNetUsersDTO
+            {
+                Name = user.name,
+                Surname = user.surname,
+                FK_Idclass = user.FK_idclass
+            }).ToList();
+            return Ok(usersDTO);
         }
     }
 
@@ -50,7 +57,7 @@ public class AspNetUsersController : ControllerBase
 
 
                 testEntity._AspNetUsersEnum = Models.AspNetUsers.AspNetUsersEnum.Student;
-
+                
                 try
                 {
                     session.Save(testEntity);
@@ -59,8 +66,8 @@ public class AspNetUsersController : ControllerBase
                     aspNetUsersDTO.Email = testEntity.Email;
                     aspNetUsersDTO.Surname = testEntity.surname;
                     aspNetUsersDTO.EmailConfirmed = testEntity.EmailConfirmed;
-                    aspNetUsersDTO.Login = testEntity.login;
                     aspNetUsersDTO.Name = testEntity.name;
+                    
                     return aspNetUsersDTO;
                 }
                 catch (Exception ex)
@@ -78,9 +85,54 @@ public class AspNetUsersController : ControllerBase
 
         }
     }
+    
+    [HttpGet("info")]
+    public async Task<IActionResult> GetUserInfo()
+    {
+        // Check if user is authenticated
+        var user = HttpContext.User;
+        if (user.Identity != null && user.Identity.IsAuthenticated)
+        {
+            // Retrieve user ID from claims
+            var userIdClaim = user.FindFirst(ClaimTypes.NameIdentifier);
+            if (userIdClaim == null)
+            {
+                return BadRequest("User ID claim not found.");
+            }
+
+            // Parse user ID
+            if (!Guid.TryParse(userIdClaim.Value, out Guid userId))
+            {
+                return BadRequest("Invalid user ID format.");
+            }
+
+            // Retrieve user entity by ID
+            using (var session = NHibernateHelper.OpenSession())
+            {
+                var userEntity = session.Get<Models.AspNetUsers.AspNetUsers>(userIdClaim.Value);
+
+                AspNetUsersDTO aspNetUsersDTO = new AspNetUsersDTO();
+
+                aspNetUsersDTO.Surname = userEntity.surname;
+                aspNetUsersDTO.Name = userEntity.name;
+                aspNetUsersDTO.Email = userEntity.Email;
+                aspNetUsersDTO.EmailConfirmed = userEntity.EmailConfirmed;
 
 
+                if (userEntity == null)
+                {
+                    return NotFound("User not found.");
+                }
 
+                return Ok(aspNetUsersDTO);
+            }
+        }
+        else
+        {
+            // User is not authenticated
+            return Unauthorized();
+        }
+    }
 
 
 }

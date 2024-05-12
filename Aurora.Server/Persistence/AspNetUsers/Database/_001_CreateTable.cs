@@ -1,6 +1,6 @@
 ﻿namespace Aurora.Server.Models.Student.Database;
 using FluentMigrator;
-[Migration(001)]
+[Migration(002)]
 public class _001_CreateTable : Migration
 {
     public override void Up()
@@ -23,8 +23,9 @@ public class _001_CreateTable : Migration
             .WithColumn("AccessFailedCount").AsInt32().Nullable()
             .WithColumn("name").AsString().Nullable()
             .WithColumn("surname").AsString().Nullable()
-            .WithColumn("login").AsString().Nullable()
-            .WithColumn("_AspNetUsersEnum").AsInt32().Nullable();
+            .WithColumn("_AspNetUsersEnum").AsInt32().Nullable()
+            .WithColumn("FK_idclass").AsString().Nullable();
+        Create.ForeignKey("FK_id_class").FromTable("AspNetUsers").ForeignColumn("FK_idclass").ToTable("Class").PrimaryColumn("Id");
     }
 
     public override void Down()

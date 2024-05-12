@@ -5,30 +5,39 @@ import classes from "./MyClass.module.css";
 import { Table, TableData, Checkbox } from '@mantine/core';
 import { Button, Group, Paper, Text, ScrollArea } from '@mantine/core';
 
-
-
-const elements = [
-    { Lp: 1, Imie: 'Przemysław', Nazwisko: 'C', Klasa: '1A' },
-    { Lp: 2, Imie: 'Andrzej', Nazwisko: 'N', Klasa: '1A' },
-    { Lp: 3, Imie: 'Witold', Nazwisko: 'Y', Klasa: '1A' },
-    { Lp: 4, Imie: 'Krystian', Nazwisko: 'Ba', Klasa: '1A' },
-    { Lp: 5, Imie: 'Kamil', Nazwisko: 'Ce', Klasa: '1A' },
-];
-
-
-
-
 export default function MyClass() {
 
-    const rows = elements.map((element) => (
-        <Table.Tr key={element.Lp}>
-            <Table.Td>{element.Lp}</Table.Td>
-            <Table.Td>{element.Imie}</Table.Td>
-            <Table.Td>{element.Nazwisko}</Table.Td>
-            
-            <Table.Td>{element.Klasa}</Table.Td>
-        </Table.Tr>
-    ));
+
+    const [students, setStudents] = useState([]);
+
+    useEffect(() => {
+        const fetchStudents = async () => {
+            try {
+                const response = await fetch("https://localhost:7287/api/AspNetUsers");
+                const data = await response.json();
+                setStudents(data);
+
+
+
+
+            } catch (error) {
+                console.error('Error fetching students:', error);
+            }
+        };
+
+        fetchStudents();
+    }, []);
+
+    const rows = students.map((student, index) => { 
+        return(
+        <Table.Tr key={index}>
+            <Table.Td>{index + 1}</Table.Td>
+            <Table.Td>{student.name}</Table.Td>
+            <Table.Td>{student.surname}</Table.Td>
+            <Table.Td>{student.name_class}</Table.Td>
+            </Table.Tr>
+        )
+    });
     return (
         <div className={classes.container}>
 

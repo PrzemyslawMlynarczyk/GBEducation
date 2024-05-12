@@ -2,7 +2,7 @@
 {
     using FluentMigrator;
 
-    [Migration(002)] // Replace this with your own version number
+    [Migration(003)] // Replace this with your own version number
     public class CreateUserTokensTable : Migration
     {
         public override void Up()

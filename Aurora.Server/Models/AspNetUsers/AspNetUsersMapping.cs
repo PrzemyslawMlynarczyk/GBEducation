@@ -11,9 +11,8 @@ namespace Aurora.Server.Models.AspNetUsers;
             Id(x => x.Id);
             Map(x => x.name);
             Map(x => x.surname);
-            Map(x => x.login);
             Map(x => x._AspNetUsersEnum).CustomType<AspNetUsersEnum>();
-
+            Map(x => x.FK_idclass);
         //Identity maps
         Map(x => x.UserName);
         Map(x => x.NormalizedUserName);
@@ -29,6 +28,7 @@ namespace Aurora.Server.Models.AspNetUsers;
         Map(x => x.LockoutEnd);
         Map(x => x.LockoutEnabled);
         Map(x => x.AccessFailedCount);
+       
         Table(_tablename);
         }
 
