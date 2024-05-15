@@ -24,7 +24,7 @@ public class _001_CreateTable : Migration
             .WithColumn("name").AsString().Nullable()
             .WithColumn("surname").AsString().Nullable()
             .WithColumn("_AspNetUsersEnum").AsInt32().Nullable()
-            .WithColumn("FK_idclass").AsString().Nullable();
+            .WithColumn("FK_idclass").AsGuid().Nullable();
         Create.ForeignKey("FK_id_class").FromTable("AspNetUsers").ForeignColumn("FK_idclass").ToTable("Class").PrimaryColumn("Id");
     }
 

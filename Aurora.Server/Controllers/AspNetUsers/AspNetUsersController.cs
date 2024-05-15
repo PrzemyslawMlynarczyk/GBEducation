@@ -16,22 +16,45 @@ using NHibernate.Linq;
 public class AspNetUsersController : ControllerBase
 {
     private Persistence.AspNetUsers.AspNetUsersRepository _AspNetUsersRepository = new Persistence.AspNetUsers.AspNetUsersRepository();
+
     [HttpGet]
     public ActionResult<IEnumerable<Models.AspNetUsers.AspNetUsersDTO>> GetAll()
     {
-        //pobiera wszystkich uzytkownikow
         using (var session = NHibernateHelper.OpenSession())
         {
-            var users = session.Query<Models.AspNetUsers.AspNetUsers>().ToList();
-            var usersDTO = users.Select(user => new Models.AspNetUsers.AspNetUsersDTO
-            {
-                Name = user.name,
-                Surname = user.surname,
-                FK_Idclass = user.FK_idclass
-            }).ToList();
+            //połączenie dwóch tabel z bazy, następnie wyłuskanie konkretnego rekordu (w tym przypadku Name_class)
+            var usersDTO = session.Query<Models.AspNetUsers.AspNetUsers>()
+                .Join(session.Query<Models.Class.Class>(),
+                    user => user.FK_idclass,
+                    classObj => classObj.Id,
+                    (user, classObj) => new Models.AspNetUsers.AspNetUsersDTO
+                    {
+                        Name = user.name,
+                        Surname = user.surname,
+                        EmailConfirmed = user.EmailConfirmed,
+                        Email = user.Email,
+                        FK_Idclass = user.FK_idclass,
+                        ClassName = classObj.Name_class
+                    })
+                .ToList();
+
             return Ok(usersDTO);
         }
     }
+
+
+    [HttpGet("{classId}")]
+    public ActionResult<int> GetClassStudentsCount(Guid classId)
+    {
+        using (var session = NHibernateHelper.OpenSession())
+        {
+            var usersCount = session.Query<Models.AspNetUsers.AspNetUsers>()
+                                    .Count(user => user.FK_idclass == classId);
+            return Ok(usersCount);
+        }
+    }
+
+
 
 
     [HttpPost]
@@ -117,7 +140,7 @@ public class AspNetUsersController : ControllerBase
                 aspNetUsersDTO.Name = userEntity.name;
                 aspNetUsersDTO.Email = userEntity.Email;
                 aspNetUsersDTO.EmailConfirmed = userEntity.EmailConfirmed;
-
+                aspNetUsersDTO.FK_Idclass = userEntity.FK_idclass;
 
                 if (userEntity == null)
                 {

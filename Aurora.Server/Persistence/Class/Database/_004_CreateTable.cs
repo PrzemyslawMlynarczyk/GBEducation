@@ -8,7 +8,7 @@ using FluentMigrator;
     public override void Up()
     {
         Create.Table("Class")
-             .WithColumn(nameof(Models.Class.Class.Id)).AsString().NotNullable().PrimaryKey()
+             .WithColumn(nameof(Models.Class.Class.Id)).AsGuid().NotNullable().PrimaryKey()
              .WithColumn(nameof(Models.Class.Class.Name_class)).AsString().Nullable();
 
 

@@ -6,6 +6,7 @@
          public string Surname { get; set; }
          public bool EmailConfirmed { get; set; }
          public string Email { get; set; }
-          public Guid? FK_Idclass { get; set; }
+         public Guid? FK_Idclass { get; set; }
+         public string ClassName { get; set; }
     }
 }

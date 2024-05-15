@@ -9,6 +9,8 @@ export default function MyClass() {
 
 
     const [students, setStudents] = useState([]);
+    const [selectedClass, setSelectedClass] = useState(null);
+    const filteredStudents = students.filter(student => student.className === selectedClass);
 
     useEffect(() => {
         const fetchStudents = async () => {
@@ -16,10 +18,6 @@ export default function MyClass() {
                 const response = await fetch("https://localhost:7287/api/AspNetUsers");
                 const data = await response.json();
                 setStudents(data);
-
-
-
-
             } catch (error) {
                 console.error('Error fetching students:', error);
             }
@@ -28,13 +26,13 @@ export default function MyClass() {
         fetchStudents();
     }, []);
 
-    const rows = students.map((student, index) => { 
-        return(
-        <Table.Tr key={index}>
-            <Table.Td>{index + 1}</Table.Td>
-            <Table.Td>{student.name}</Table.Td>
-            <Table.Td>{student.surname}</Table.Td>
-            <Table.Td>{student.name_class}</Table.Td>
+    const rows = filteredStudents.map((student, index) => {
+        return (
+            <Table.Tr key={index}>
+                <Table.Td>{index + 1}</Table.Td>
+                <Table.Td>{student.name}</Table.Td>
+                <Table.Td>{student.surname}</Table.Td>
+                <Table.Td>{student.className}</Table.Td>
             </Table.Tr>
         )
     });
@@ -67,13 +65,13 @@ export default function MyClass() {
                                 Wybierz klasę:
                             </Text>
                             <Button justify="space-between" variant="filled" color="rgba(0, 0, 0, 1)" size="xl" radius="xl"
-                                    mt="md">Klasa: 1A</Button>
+                                mt="md" onClick={() => setSelectedClass('1A')}>Klasa: 1A</Button>
                             <Button justify="space-between" variant="filled" color="rgba(0, 0, 0, 1)" size="xl" radius="xl"
-                                    mt="md">Klasa: 1B</Button>
+                                mt="md" onClick={() => setSelectedClass('1B')}>Klasa: 1B</Button>
                             <Button justify="space-between" variant="filled" color="rgba(0, 0, 0, 1)" size="xl" radius="xl"
-                                    mt="md">Klasa: 2A</Button>
+                                mt="md" onClick={() => setSelectedClass('2A')}>Klasa: 2A</Button>
                             <Button justify="space-between" variant="filled" color="rgba(0, 0, 0, 1)" size="xl" radius="xl"
-                                    mt="md">Klasa: 2B</Button>
+                                mt="md" onClick={() => setSelectedClass('2B')}>Klasa: 2B</Button>
                         </div>
                     </Paper>
                 </Group>
