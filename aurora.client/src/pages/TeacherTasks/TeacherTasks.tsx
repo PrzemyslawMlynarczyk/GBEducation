@@ -2,8 +2,21 @@
 import { HeaderMenu } from "../../layouts/Header/HeaderMenu";
 import { TopTools } from "../../layouts/TopTools/TopTools.tsx";
 import classes from "./TeacherTasks.module.css";
-
+import { Footer } from "../../layouts/Footer/Footer";
 import { Button, Group, Paper, Text, ScrollArea, Flex, Divider } from '@mantine/core';
+
+const handleUploadFileClick = () => {
+    window.location.href = "/UploadFile";
+};
+
+
+const handleBackSchoolSubjectClick = () => {
+    window.location.href = "/ClassTask";
+};
+
+const handleTaskEvaluationClick = () => {
+    window.location.href = "/TaskEvaluation";
+};
 
 export default function TeacherTasks() {
     return (
@@ -19,7 +32,7 @@ export default function TeacherTasks() {
                 <Group justify="center">
                     <Paper shadow="xl" radius="md" withBorder p="xl">
                         <div className={classes.buttonContainer}>
-                            <Button compact>
+                            <Button compact onClick={handleBackSchoolSubjectClick}>
                                 <svg xmlns="http://www.w3.org/2000/svg" width="24" height="24" viewBox="0 0 24 24"
                                     fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round"
                                     stroke-linejoin="round"
@@ -46,10 +59,10 @@ export default function TeacherTasks() {
                         <div className={classes.gapDivider}>
                             <Text size="xl" > Lekcja 1</Text>
                             <Flex justify="space-between" className={classes.gap}>
-                            <Button variant="default">
+                                <Button variant="default" onClick={handleUploadFileClick}>
                                 Wstaw Zadanie
                             </Button> 
-                            <Button variant="default">
+                                <Button variant="default" onClick={handleTaskEvaluationClick}>
                                 Oceń Zadanie
                                 </Button> 
                             </Flex>
@@ -59,10 +72,10 @@ export default function TeacherTasks() {
                         <div className={classes.gapDivider}>
                             <Text size="xl" > Lekcja 2</Text>
                             <Flex justify="space-between" className={classes.gap}>
-                                <Button variant="default">
+                                <Button variant="default" onClick={handleUploadFileClick}>
                                     Wstaw Zadanie
                                 </Button>
-                                <Button variant="default">
+                                <Button variant="default" onClick={handleTaskEvaluationClick} >
                                     Oceń Zadanie
                                 </Button>
                             </Flex>
@@ -72,10 +85,10 @@ export default function TeacherTasks() {
                         <div className={classes.gapDivider}>
                             <Text size="xl" > Lekcja 3</Text>
                             <Flex justify="space-between" className={classes.gap}>
-                                <Button variant="default">
+                                <Button variant="default" onClick={handleUploadFileClick}>
                                     Wstaw Zadanie
                                 </Button>
-                                <Button variant="default">
+                                <Button variant="default" onClick={handleTaskEvaluationClick}>
                                     Oceń Zadanie
                                 </Button>
                             </Flex>
@@ -84,6 +97,7 @@ export default function TeacherTasks() {
                     </ScrollArea>
                 </Paper>
             </div>
+            <Footer /> 
         </div>
     );
 }

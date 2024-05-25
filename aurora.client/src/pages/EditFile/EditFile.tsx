@@ -2,8 +2,14 @@
 import { HeaderMenu } from "../../layouts/Header/HeaderMenu";
 import { TopTools } from "../../layouts/TopTools/TopTools.tsx";
 import classes from "./EditFile.module.css";
-
+import { Footer } from "../../layouts/Footer/Footer";
 import { Button, Group, Paper, Text, ScrollArea, Flex, Divider, FileInput, Textarea } from '@mantine/core';
+
+
+const handleBackClick = () => {
+    window.location.href = "/UploadFile";
+};
+
 
 export default function EditFile() {
     return (
@@ -24,7 +30,7 @@ export default function EditFile() {
                     <ScrollArea h={375} w={500}>
                         <div className={classes.gapDivider}>
                             <Flex gap="sm">
-                                <Button compact >
+                                <Button compact onClick={handleBackClick}>
                                     <svg xmlns="http://www.w3.org/2000/svg" width="24" height="24" viewBox="0 0 24 24"
                                          fill="none" stroke="currentColor" strokeWidth="2" strokeLinecap="round"
                                          strokeLinejoin="round"
@@ -36,13 +42,12 @@ export default function EditFile() {
                                     </svg>
                                     Powrót
                                 </Button>
-                                <FileInput
-                                    
-                                    size="xl"
-                                    label="Edytuj zadanie"
-                                    placeholder="O tutaj!"
-                                />
                             </Flex>
+                            <FileInput
+                                size="xl"
+                                label="Edytuj zadanie"
+                                placeholder="O tutaj!"
+                            />
                         </div>
 
                         <Button variant="default" justify="space-between" className={classes.gap}>
@@ -52,6 +57,7 @@ export default function EditFile() {
                     </ScrollArea>
                 </Paper>
             </div>
+            <Footer /> 
         </div>
     );
 }

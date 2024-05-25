@@ -2,8 +2,17 @@
 import { HeaderMenu } from "../../layouts/Header/HeaderMenu";
 import { TopTools } from "../../layouts/TopTools/TopTools.tsx";
 import classes from "./UploadFile.module.css";
-
+import { Footer } from "../../layouts/Footer/Footer";
 import { Button, Group, Paper, Text, ScrollArea, Flex, Divider, FileInput, Textarea } from '@mantine/core';
+
+
+const handleEditFileClick = () => {
+    window.location.href = "/EditFile";
+};
+
+const handleTeacherTasksClick = () => {
+    window.location.href = "/TeacherTasks";
+};
 
 export default function UploadFile() {
     return (
@@ -19,7 +28,7 @@ export default function UploadFile() {
                 <Group justify="center">
                     <Paper shadow="xl" radius="md" withBorder p="xl">
                         <div className={classes.buttonContainer}>
-                            <Button compact>
+                            <Button compact onClick={handleTeacherTasksClick}>
                                 <svg xmlns="http://www.w3.org/2000/svg" width="24" height="24" viewBox="0 0 24 24"
                                      fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round"
                                      stroke-linejoin="round"
@@ -31,8 +40,7 @@ export default function UploadFile() {
                                 </svg>
                                 Powrót
                             </Button>
-                            <Button justify="center" variant="filled" color="rgba(0, 0, 0, 1)" size="xl" radius="xl"
-                                    mt="md">Edytuj plik</Button>
+                            <Button justify="center" variant="filled" color="rgba(0, 0, 0, 1)" size="xl" radius="xl" mt="md" onClick={handleEditFileClick}>Edytuj plik</Button>
                             <Textarea
                                 className={classes.gap}
                                 placeholder="Wpisz tutaj!"
@@ -68,6 +76,7 @@ export default function UploadFile() {
                     </ScrollArea>
                 </Paper>
             </div>
+            <Footer /> 
         </div>
     );
 }

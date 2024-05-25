@@ -2,12 +2,13 @@
 import { HeaderMenu } from "../../layouts/Header/HeaderMenu";
 import classes from "./Menu.module.css";
 import { Text, Paper } from '@mantine/core';
+import { Footer } from "../../layouts/Footer/Footer";
 
 export default function Menu() {
     return (
         <div>
             <div className={classes.header}>
-                <HeaderMenu/>
+                <HeaderMenu />
             </div>
             <div className={classes.menuContainer}>
                 <div className={classes.custom}>
@@ -27,9 +28,7 @@ export default function Menu() {
                     </Paper>
                 </div>
             </div>
-            <div className={classes.footer}>
-                <h4> Stopka</h4>
-            </div>
+            <Footer /> 
         </div>
     );
 }

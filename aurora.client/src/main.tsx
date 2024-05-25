@@ -19,6 +19,7 @@ import TeacherTasks from "./pages/TeacherTasks/TeacherTasks.tsx";
 import UploadFile from "./pages/UploadFile/UploadFile.tsx";
 import EditFile from "./pages/EditFile/EditFile.tsx";
 import MyClass from "./pages/MyClass/MyClass.tsx";
+import TaskEvaluation from "./pages/TaskEvaluation/TaskEvaluation.tsx";
 
 // Tworzenie motywu Mantine
 const theme = createTheme({
@@ -45,6 +46,7 @@ ReactDOM.createRoot(document.getElementById('root')).render(
                 <Route path="/UploadFile" element={<UploadFile />} />
                 <Route path="/EditFile" element={<EditFile />} />
                 <Route path="/MyClass" element={<MyClass />} />
+                <Route path="/TaskEvaluation" element={<TaskEvaluation />} />
 
             </Routes>
         </BrowserRouter>

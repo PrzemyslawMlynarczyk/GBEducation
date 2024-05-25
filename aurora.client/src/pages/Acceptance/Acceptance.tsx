@@ -4,7 +4,7 @@ import { TopTools } from "../../layouts/TopTools/TopTools";
 import classes from "./Acceptance.module.css";
 import { Table, TableData, Checkbox } from '@mantine/core';
 import { Button, Group, Paper, Text, ScrollArea } from '@mantine/core';
-
+import { Footer } from "../../layouts/Footer/Footer";
 
 
 const elements = [
@@ -16,7 +16,9 @@ const elements = [
 ];
 
 
-
+const handleClassClick = () => {
+    window.location.href = "/Class";
+};
 
 export default function Acceptance() {
     
@@ -53,13 +55,13 @@ export default function Acceptance() {
                     <HeaderMenu />
                 </div>
                 <div className={classes.breadcrum}>
-                    <TopTools link1="/Class" link2="/ClassTask" link3="/Acceptance" />
+                    <TopTools link1="/MyClass" link2="/ClassTask" link3="/Acceptance" />
                 </div>
                 <div className={classes.left}>
                     <Group justify="center">
                         <Paper shadow="xl" radius="md" withBorder p="xl">
                             <div className={classes.buttonContainer}>
-                                <Button compact>
+                                <Button compact onClick={handleClassClick}>
                                     <svg xmlns="http://www.w3.org/2000/svg" width="24" height="24" viewBox="0 0 24 24"
                                         fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round"
                                         stroke-linejoin="round"
@@ -104,9 +106,16 @@ export default function Acceptance() {
                                     <Table.Tbody>{rows}</Table.Tbody>
                                 </Table>
                             </div>
+                            <div className={classes.bMargin}>
+                                <Button variant="light" color="gray" radius="lg">Akceptuj</Button>
+                            </div>
+                           
                         </ScrollArea>
+
                     </Paper>
+
                 </div>
+                <Footer /> 
             </div>
         );
     }

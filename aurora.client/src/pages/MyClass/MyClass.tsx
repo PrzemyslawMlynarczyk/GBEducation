@@ -4,6 +4,12 @@ import { TopTools } from "../../layouts/TopTools/TopTools";
 import classes from "./MyClass.module.css";
 import { Table, TableData, Checkbox } from '@mantine/core';
 import { Button, Group, Paper, Text, ScrollArea } from '@mantine/core';
+import { Footer } from "../../layouts/Footer/Footer";
+
+const handleClassClick = () => {
+    window.location.href = "/Class";
+};
+
 
 export default function MyClass() {
 
@@ -49,7 +55,7 @@ export default function MyClass() {
                 <Group justify="center">
                     <Paper shadow="xl" radius="md" withBorder p="xl">
                         <div className={classes.buttonContainer}>
-                            <Button compact>
+                            <Button compact onClick={handleClassClick}>
                                 <svg xmlns="http://www.w3.org/2000/svg" width="24" height="24" viewBox="0 0 24 24"
                                      fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round"
                                      stroke-linejoin="round"
@@ -97,6 +103,7 @@ export default function MyClass() {
                     </ScrollArea>
                 </Paper>
             </div>
+            <Footer /> 
         </div>
     );
 }

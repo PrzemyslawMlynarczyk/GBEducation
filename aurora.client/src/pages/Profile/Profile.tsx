@@ -6,7 +6,7 @@ import { IconUpload, IconPhoto, IconX } from '@tabler/icons-react';
 import { Dropzone, DropzoneProps, IMAGE_MIME_TYPE } from '@mantine/dropzone';
 import { useDisclosure } from '@mantine/hooks';
 import '@mantine/dropzone/styles.css';
-
+import { Footer } from "../../layouts/Footer/Footer";
 
 export default function Profile(props: Partial<DropzoneProps>) {
     const [opened, { open, close }] = useDisclosure(false);
@@ -121,6 +121,7 @@ export default function Profile(props: Partial<DropzoneProps>) {
             <div className={classes.footer}>
                 
             </div>
+            <Footer /> 
         </div>
     );
 }

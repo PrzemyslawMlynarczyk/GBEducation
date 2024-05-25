@@ -2,10 +2,19 @@
 import { HeaderMenu } from "../../layouts/Header/HeaderMenu";
 import { TopTools } from "../../layouts/TopTools/TopTools.tsx";
 import classes from "./ClassTask.module.css";
-
+import { Footer } from "../../layouts/Footer/Footer";
 import { Button, Group, Paper, Text, ScrollArea } from '@mantine/core';
 
-export default function ClassTask() {
+
+const handleSchoolSubjectClick = () => {
+    window.location.href = "/TeacherTasks";
+};
+
+const handleClassClick = () => {
+    window.location.href = "/Class";
+};
+
+export default function ClassTask() {   
     return (
         <div className={classes.container}>
 
@@ -13,7 +22,7 @@ export default function ClassTask() {
                 <HeaderMenu/>
             </div>
             <div className={classes.breadcrum}>
-                <TopTools link1="/Class" link2="/ClassTask" link3="/Acceptance" />
+                <TopTools link1="/MyClass" link2="/ClassTask" link3="/Acceptance" />
 
 
 
@@ -22,7 +31,7 @@ export default function ClassTask() {
                 <Group justify="center">
                     <Paper shadow="xl" radius="md" withBorder p="xl">
                     <div className={classes.buttonContainer}>
-                        <Button compact>
+                            <Button compact onClick={handleClassClick}>
                             <svg xmlns="http://www.w3.org/2000/svg" width="24" height="24" viewBox="0 0 24 24"
                                  fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round"
                                  stroke-linejoin="round"
@@ -54,7 +63,7 @@ export default function ClassTask() {
                     <ScrollArea h={375} w={500}>
                         <Text size="xl" td="underline"> Wybierz przedmiot do którego chcesz wstawić zadanie!</Text>
                         <div className={classes.gap}>
-                            <Button size="xl" radius="xl" justify="space-between" variant="default">
+                            <Button size="xl" radius="xl" justify="space-between" variant="default" onClick={handleSchoolSubjectClick}>
                                 <svg  xmlns="http://www.w3.org/2000/svg"  width="24"  height="24"  viewBox="0 0 24 24"  fill="none"  stroke="currentColor"  stroke-width="2"  stroke-linecap="round"  stroke-linejoin="round"  class="icon icon-tabler icons-tabler-outline icon-tabler-math"><path stroke="none" d="M0 0h24v24H0z" fill="none"/><path d="M19 5h-7l-4 14l-3 -6h-2" /><path d="M14 13l6 6" /><path d="M14 19l6 -6" /></svg>
                                 Matematyka
                             </Button>
@@ -86,6 +95,7 @@ export default function ClassTask() {
                     </ScrollArea>
                 </Paper>
             </div>
+            <Footer /> 
         </div>
     );
 }

@@ -2,6 +2,8 @@
 import { HeaderMenu } from "../../layouts/Header/HeaderMenu";
 import classes from "./HelpDesk.module.css";
 import { Text, Paper } from '@mantine/core';
+import { Footer } from "../../layouts/Footer/Footer";
+
 export default function HelpDesk() {
 
 
@@ -32,6 +34,7 @@ export default function HelpDesk() {
                 <h4>+48 890 321 727</h4>
                 </Paper>
             </div>
+            <Footer /> 
         </div>
     );
 }
