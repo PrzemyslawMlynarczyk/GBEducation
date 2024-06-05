@@ -10,7 +10,7 @@ const links = [
     { link: '/Class', label: 'Klasa' },
     { link: '/HelpDesk', label: 'Centrum Pomocy' },
     { link: '/Profile', label: 'Profil' },
-    { link: '/Logout', label: 'Wyloguj się' },
+    { link: '/', label: 'Wyloguj się' },
 ];
 
 export function HeaderMenu() {
